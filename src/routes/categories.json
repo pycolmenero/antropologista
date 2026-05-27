@@ -1,0 +1,261 @@
+[
+  {
+    "id": "endocrine_disruptors",
+    "icon": "⚗",
+    "label": "ENDOCRINE DISRUPTORS",
+    "tagline": "Synthetic chemicals that interfere with your hormonal system",
+    "color": "#7a4fa3",
+    "summary": "Endocrine disruptors are chemicals that mimic, block, or interfere with your body's hormones. For men, the most critical effects are reduced testosterone, lower sperm quality, thyroid disruption, and increased metabolic disease risk. They are everywhere — but exposure can be significantly reduced with simple swaps.",
+    "sections": [
+      {
+        "title": "Food & Drink",
+        "items": [
+          {
+            "label": "Use glass, stainless steel, or ceramic instead of plastic",
+            "desc": "Plastic containers continuously shed microplastics and chemical additives into food and drink. The risk multiplies with heat, fat content, and acidity. Microplastics have been found in human blood, lungs, and testicular tissue.",
+            "chemicals": ["microplastics"],
+            "tag": "solution"
+          },
+          {
+            "label": "Never heat food in plastic",
+            "desc": "Heat dramatically accelerates the leaching of plasticisers and microplastic particles into food. This includes microwaving in plastic containers, pouring boiling water into plastic cups, or leaving plastic bottles in a hot car.",
+            "chemicals": ["microplastics", "BPA", "phthalates"],
+            "tag": "problem"
+          },
+          {
+            "label": "Avoid canned food",
+            "desc": "The inner lining of most food and drink cans is coated with an epoxy resin containing BPA, which leaches into the contents — especially acidic foods like tomatoes. BPA mimics estrogen and suppresses testosterone even at low doses.",
+            "chemicals": ["BPA"],
+            "tag": "problem"
+          },
+          {
+            "label": "Filter tap water",
+            "desc": "Tap water commonly contains PFAS ('forever chemicals'), chlorine byproducts, pharmaceutical residues, pesticide runoff, and heavy metals depending on your region. Activated carbon filters handle most organic compounds; reverse osmosis removes virtually everything including PFAS and heavy metals.",
+            "chemicals": ["PFAS", "pesticides", "chlorine byproducts"],
+            "tag": "solution"
+          },
+          {
+            "label": "Buy organic for the Dirty Dozen",
+            "desc": "The Dirty Dozen is an annual list published by the EWG (Environmental Working Group) of the 12 most pesticide-contaminated crops. Topping the list consistently: strawberries, spinach, kale, peaches, pears, and apples. Pesticides — particularly organophosphates — are neurotoxic and disrupt hormonal signalling.",
+            "chemicals": ["pesticides", "organophosphates"],
+            "tag": "solution"
+          },
+          {
+            "label": "Limit fatty fish",
+            "desc": "Large fatty fish such as tuna, swordfish, and farmed salmon accumulate PCBs and dioxins through the food chain — a process called bioaccumulation. These compounds are fat-soluble and persist in your body for years. Prefer smaller fish like sardines, mackerel, or anchovies which have far lower contamination levels.",
+            "chemicals": ["PCBs", "dioxins"],
+            "tag": "problem"
+          }
+        ]
+      },
+      {
+        "title": "Personal Care",
+        "items": [
+          {
+            "label": "Use natural deodorant",
+            "desc": "Conventional antiperspirants block sweat glands using aluminum compounds, which are absorbed through the skin and have weak estrogenic activity. They also commonly contain parabens (preservatives that mimic estrogen) and triclosan (an antibacterial that disrupts thyroid function). Armpits are a high-absorption zone — what you put there enters the bloodstream quickly.",
+            "chemicals": ["aluminum", "parabens", "triclosan"],
+            "tag": "solution"
+          },
+          {
+            "label": "Choose fragrance-free or transparent cologne and perfume",
+            "desc": "The word 'fragrance' or 'parfum' on a label is a legal black box — manufacturers are not required to disclose what's inside it. It routinely hides dozens of phthalates (used to make scent last) and synthetic musks, both of which are hormone-disrupting. Look for brands that fully disclose their ingredient list.",
+            "chemicals": ["phthalates", "synthetic musks"],
+            "tag": "solution"
+          },
+          {
+            "label": "Use natural soap — avoid antibacterial products",
+            "desc": "Antibacterial soaps rely on triclosan or triclocarban to kill bacteria, but these chemicals inhibit thyroid hormone synthesis and disrupt the gut microbiome. Regular natural soap with plain surfactants cleans just as effectively without the hormonal cost.",
+            "chemicals": ["triclosan"],
+            "tag": "solution"
+          },
+          {
+            "label": "Use natural shampoo",
+            "desc": "Most commercial shampoos contain parabens as preservatives and DEA/MEA (diethanolamine compounds) as foaming agents. DEA reacts with other ingredients to form nitrosamines, which are potentially carcinogenic. Look for short ingredient lists and recognisable plant-based surfactants.",
+            "chemicals": ["parabens", "DEA", "MEA"],
+            "tag": "solution"
+          },
+          {
+            "label": "Use natural moisturiser",
+            "desc": "Conventional lotions and creams commonly contain parabens (preservatives) and oxybenzone (a UV filter used in some sunscreens). Both are absorbed through the skin and have documented estrogenic activity. Alternatives: shea butter, coconut oil, jojoba oil, or certified clean-label brands.",
+            "chemicals": ["parabens", "oxybenzone"],
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Household",
+        "items": [
+          {
+            "label": "Avoid non-stick cookware",
+            "desc": "Traditional non-stick coatings (Teflon and similar) are made with PFAS — per- and polyfluoroalkyl substances known as 'forever chemicals' because they do not break down in the environment or the body. At high heat, the coating degrades and releases PFAS vapour and particles into food. PFAS are linked to suppressed testosterone, immune disruption, elevated cholesterol, and testicular and kidney cancer. Switch to cast iron, stainless steel, or ceramic-coated alternatives.",
+            "chemicals": ["PFAS"],
+            "tag": "problem"
+          },
+          {
+            "label": "Avoid air fresheners",
+            "desc": "Plug-in and spray air fresheners are among the most concentrated domestic sources of phthalates and synthetic musks. You inhale and absorb them continuously. If you want a clean-smelling home, open windows, use beeswax candles, or diffuse pure essential oils.",
+            "chemicals": ["phthalates", "synthetic musks"],
+            "tag": "problem"
+          },
+          {
+            "label": "Avoid antibacterial cleaning products",
+            "desc": "Much like antibacterial soaps, many household cleaning sprays and wipes contain triclosan or similar biocides. Regular cleaning with diluted white vinegar, castile soap, or plain soap and water is equally effective for everyday surfaces.",
+            "chemicals": ["triclosan"],
+            "tag": "problem"
+          }
+        ]
+      },
+      {
+        "title": "Other",
+        "items": [
+          {
+            "label": "Avoid handling thermal receipts",
+            "desc": "Till receipts, ATM slips, and parking tickets are printed on thermal paper coated with free BPA — not bound BPA as in plastics, meaning it is absorbed through the skin within seconds of contact. The absorption rate doubles if your hands are wet or you've recently used hand sanitiser. Decline receipts when possible or handle them minimally.",
+            "chemicals": ["BPA"],
+            "tag": "problem"
+          },
+          {
+            "label": "Avoid polyester underwear",
+            "desc": "Polyester is a petroleum-derived synthetic fabric. Heat and friction from body contact cause it to release phthalates directly onto the skin in the scrotal area — one of the body's highest-absorption zones and the region most sensitive to temperature and chemical disruption for testosterone production and sperm quality. Choose cotton, bamboo, or wool.",
+            "chemicals": ["phthalates"],
+            "tag": "problem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sleep",
+    "icon": "◑",
+    "label": "SLEEP ISSUES",
+    "tagline": "Poor sleep is the fastest way to tank testosterone and cognitive function",
+    "color": "#3a6ea8",
+    "summary": "Testosterone is primarily produced during deep sleep. A single night of poor sleep measurably reduces next-day testosterone levels. Chronic sleep deprivation also elevates cortisol, accelerates cognitive decline, and impairs metabolic function. Most sleep problems have fixable environmental causes.",
+    "sections": [
+      {
+        "title": "Habits & Environment",
+        "items": [
+          {
+            "label": "Block blue light after sunset",
+            "desc": "Blue light wavelengths (400–490nm) suppress melatonin production by signalling to the brain that it is still daytime. Screens — phones, laptops, TVs — emit intense blue light. Wearing amber or red-lens glasses after sunset blocks the relevant spectrum and allows melatonin to rise naturally. Alternatively, switch devices to full night mode and dim all lights.",
+            "item": "Red or amber lens glasses",
+            "tag": "solution"
+          },
+          {
+            "label": "Magnesium supplementation",
+            "desc": "Magnesium is involved in over 300 enzymatic reactions and plays a direct role in regulating the nervous system's transition into rest. Most people are deficient due to soil depletion. Glycinate form is best for sleep and anxiety — it is chelated to glycine, an inhibitory amino acid that itself promotes sleep. Threonate is the only form that crosses the blood-brain barrier and is better for cognitive and neurological benefit.",
+            "item": "Magnesium Glycinate (sleep) or Magnesium Threonate (brain)",
+            "tag": "solution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mental_health",
+    "icon": "◈",
+    "label": "MENTAL HEALTH",
+    "tagline": "Attention is a finite resource — protect it",
+    "color": "#4a8a6f",
+    "summary": "Modern digital environments are engineered by teams of behavioural scientists to maximise time-on-screen. The mechanisms are the same as slot machines: variable reward intervals, social validation loops, and infinite scroll. This is not a willpower problem — it is a design problem. The solution is architectural.",
+    "sections": [
+      {
+        "title": "Digital Habits",
+        "items": [
+          {
+            "label": "Eliminate mindless scrolling",
+            "desc": "Short-form infinite scroll content (Reels, TikTok, Shorts) is the most attention-destructive format ever designed. It trains the brain to expect ultra-rapid reward cycles, making sustained focus on anything slower — reading, conversation, work, nature — feel physically uncomfortable. Studies show measurable reductions in attention span and working memory with regular use. The fix is not moderation but removal: delete the apps, use grayscale mode, or install screen-time hard locks.",
+            "tag": "problem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "testosterone",
+    "icon": "◬",
+    "label": "TESTOSTERONE BOOST",
+    "tagline": "Natural inputs that drive androgen production",
+    "color": "#a34f3a",
+    "summary": "Testosterone is not just a 'gym hormone' — it governs energy, motivation, libido, bone density, muscle retention, mood stability, and cognitive sharpness. It peaks in the mid-20s and declines roughly 1% per year after 30, but lifestyle factors can dramatically accelerate or slow that decline.",
+    "sections": [
+      {
+        "title": "Diet & Supplementation",
+        "items": [
+          {
+            "label": "Eat healthy fats",
+            "desc": "Testosterone is a steroid hormone synthesised from cholesterol. Dietary fat — particularly saturated and monounsaturated — is the raw material. Low-fat diets are consistently associated with lower testosterone in clinical studies. Best sources: eggs (whole), red meat, butter, ghee, olive oil, avocado, nuts, and oily fish.",
+            "tag": "solution"
+          },
+          {
+            "label": "Zinc, Magnesium & Tongkat Ali",
+            "desc": "Zinc is a direct cofactor in testosterone synthesis — deficiency reliably lowers T. Magnesium improves free testosterone by reducing SHBG binding. Tongkat Ali (Eurycoma longifolia) is a Southeast Asian root with multiple clinical trials showing significant increases in free testosterone, LH, and sperm quality. It works primarily by reducing cortisol and increasing luteinising hormone signalling.",
+            "item": "Zinc + Magnesium + Tongkat Ali — look for a combined multi or stack these individually",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Training",
+        "items": [
+          {
+            "label": "Strength training",
+            "desc": "Resistance exercise — particularly compound, heavy movements like squats, deadlifts, and presses — triggers an acute testosterone spike during and after the session, and over time increases baseline androgen receptor density. The mechanical load signals the body that muscle and hormonal output are needed. Even 3 sessions per week of 45 minutes produces measurable hormonal benefit.",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Temperature",
+        "items": [
+          {
+            "label": "Scrotal cooling",
+            "desc": "The testes operate optimally at 34–35°C — roughly 2–3°C below core body temperature. This is why they are external to the body. Heat from laptops on the lap, tight underwear, hot baths, or sedentary sitting for hours raises scrotal temperature and measurably suppresses both sperm production and testosterone synthesis. Wear loose cotton underwear, take cold showers, and avoid prolonged heat exposure to the area.",
+            "tag": "solution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_basics",
+    "icon": "◯",
+    "label": "BODY BASICS",
+    "tagline": "The non-negotiable foundations that keep the whole system running",
+    "color": "#6e8a3a",
+    "summary": "These are not hacks or optimisations — they are biological requirements that modern indoor sedentary life systematically removes. No supplement stack replaces daily movement, sunlight, and physical contact with the ground.",
+    "sections": [
+      {
+        "title": "Movement & Structure",
+        "items": [
+          {
+            "label": "Move every day",
+            "desc": "Bone is living tissue that responds directly to mechanical load — a process called Wolff's Law. Physical stress causes osteoblasts to deposit new bone matrix, making bones denser and stronger. Prolonged sitting and lying down does the opposite: without load signals, osteoclasts break bone down faster than it is replaced. Astronauts lose up to 2% of bone density per month in zero gravity. You do not need intense exercise — walking, carrying, and bodyweight movement are sufficient to maintain bone integrity.",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Sunlight",
+        "items": [
+          {
+            "label": "Sunbathe every day",
+            "desc": "Direct sun exposure on bare skin triggers vitamin D synthesis — a hormone (not technically a vitamin) that regulates over 1,000 genes, including those governing immune function, mood, testosterone production, calcium absorption, and inflammation. Vitamin D deficiency is near-universal in northern latitudes and in people who work indoors. 20–30 minutes of midday sun on arms and torso is roughly sufficient for most skin types. Sunscreen blocks UVB and prevents synthesis — get your baseline sun first.",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Grounding",
+        "items": [
+          {
+            "label": "Walk barefoot regularly",
+            "desc": "The practice of walking barefoot on natural surfaces — grass, soil, sand — is called 'grounding' or 'earthing'. The hypothesis is that direct skin contact with the earth allows transfer of free electrons from the ground into the body, which may neutralise excess free radicals (oxidative stress). A small but growing body of peer-reviewed research shows effects on inflammation markers, cortisol rhythm, and sleep quality. The evidence is not yet conclusive, but the cost is zero and the downside negligible.",
+            "tag": "info"
+          }
+        ]
+      }
+    ]
+  }
+]
