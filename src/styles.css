@@ -1,4 +1,4 @@
-@import "tailwindcss" source("../");
+/* @import "tailwindcss" source("../"); */
 
 :root {
   --bg: #f7f4ee;
@@ -10,7 +10,7 @@
   --text-secondary: #5f5548;
   --text-muted: #8b7d6b;
 
-  --accent: #c4623a;
+  --accent: red;
   --accent-dim: #8a3f22;
   --accent-glow: rgba(196, 98, 58, 0.08);
 
@@ -39,11 +39,9 @@ body {
   min-height: 100vh;
 
   background-image:
-    radial-gradient(
-      ellipse 80% 50% at 50% -20%,
-      rgba(196,98,58,0.05) 0%,
-      transparent 60%
-    ),
+    radial-gradient(ellipse 80% 50% at 50% -20%,
+      rgba(196, 98, 58, 0.05) 0%,
+      transparent 60%),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
 }
 
@@ -62,17 +60,19 @@ body {
   z-index: 9999;
 }
 
+
+
 /* Category card */
 .category-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 2px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
 .category-card::before {
@@ -151,12 +151,10 @@ body {
 /* Divider line */
 .divider {
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--border-hover),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--border-hover),
+      transparent);
   margin: 0;
 }
 
@@ -175,7 +173,9 @@ body {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
     opacity: 0.5;
   }
@@ -201,7 +201,7 @@ body {
   transition: border-color 0.3s ease;
   font-size: 20px;
 
-  background: rgba(255,255,255,0.65);
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .category-card.open .icon-ring,
@@ -223,15 +223,33 @@ body {
   border-bottom: none;
 }
 
+
+/* REFERENCES */
+.rich-content ul {
+  list-style: disc;
+  padding-left: 1.2em;
+  margin: 8px 0;
+}
+.rich-content li {
+  margin-bottom: 4px;
+}
+.rich-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+}
+.rich-content b {
+  color: var(--text-primary);
+}
+
+
 /* Ancient humans callout */
 .callout {
-  background: linear-gradient(
-    135deg,
-    rgba(196,98,58,0.05),
-    rgba(122,143,107,0.05)
-  );
+  background: linear-gradient(135deg,
+      rgba(196, 98, 58, 0.05),
+      rgba(122, 143, 107, 0.05));
 
-  border: 1px solid rgba(196,98,58,0.12);
+  border: 1px solid rgba(196, 98, 58, 0.12);
   border-left: 2px solid var(--accent);
 
   padding: 14px 18px;
@@ -256,12 +274,29 @@ body {
   animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-.stagger-1 { animation-delay: 0.05s; }
-.stagger-2 { animation-delay: 0.12s; }
-.stagger-3 { animation-delay: 0.19s; }
-.stagger-4 { animation-delay: 0.26s; }
-.stagger-5 { animation-delay: 0.33s; }
-.stagger-6 { animation-delay: 0.40s; }
+.stagger-1 {
+  animation-delay: 0.05s;
+}
+
+.stagger-2 {
+  animation-delay: 0.12s;
+}
+
+.stagger-3 {
+  animation-delay: 0.19s;
+}
+
+.stagger-4 {
+  animation-delay: 0.26s;
+}
+
+.stagger-5 {
+  animation-delay: 0.33s;
+}
+
+.stagger-6 {
+  animation-delay: 0.40s;
+}
 
 /* Header line decorations */
 .header-rule {
@@ -284,5 +319,10 @@ body {
 @media (max-width: 640px) {
   .category-card {
     border-radius: 1px;
+  }
+
+  .table-container {
+    max-height: 22vh;
+    overflow-y: scroll;
   }
 }
