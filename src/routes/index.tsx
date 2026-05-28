@@ -701,30 +701,30 @@ function CategoryCard({ category, index }: { category: Category; index: number }
 }
 
 // ─── Root ─────────────────────────────────────────────────────────────────────
-export default function App() {
+// export default function App() {
 
-  const location = useLocation()
+//   const location = useLocation()
 
-  const lang = location.pathname.startsWith('/es')
-    ? 'es'
-    : 'en'
+//   const lang = location.pathname.startsWith('/es')
+//     ? 'es'
+//     : 'en'
 
-  const categoriesData =
-    lang === 'es'
-      ? categoriesEs
-      : categoriesEn
+//   const categoriesData =
+//     lang === 'es'
+//       ? categoriesEs
+//       : categoriesEn
 
-  const categories = categoriesData as Category[];
+//   const categories = categoriesData as Category[];
 
 
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-      {categories.map((cat, i) => (
-        <CategoryCard key={cat.id} category={cat} index={i} />
-      ))}
-    </div>
-  )
-}
+//   return (
+//     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+//       {categories.map((cat, i) => (
+//         <CategoryCard key={cat.id} category={cat} index={i} />
+//       ))}
+//     </div>
+//   )
+// }
 
 
 // function ChevronIcon({ open }: { open: boolean }) {
@@ -750,6 +750,20 @@ export default function App() {
 // }
 
 function FieldNotes() {
+
+    const location = useLocation()
+
+  const lang = location.pathname.startsWith('/es')
+    ? 'es'
+    : 'en'
+
+  const categoriesData =
+    lang === 'es'
+      ? categoriesEs
+      : categoriesEn
+
+  const categories = categoriesData as Category[];
+
   return (
     <div className="grain" style={{ minHeight: '100vh' }}>
       {/* Header */}
