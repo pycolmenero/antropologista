@@ -1,8 +1,11 @@
+import { useLocation } from '@tanstack/react-router'
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 
 // TRANSLATION
-const lang = window.location.pathname.startsWith('/es') ? 'es' : 'en'
+
+const location = useLocation()
+const lang = location.pathname.startsWith('/es') ? 'es' : 'en'
 const categoriesData = (lang === 'es'
   ? await import('../data/categories.es.json')
   : await import('../data/categories.en.json')
