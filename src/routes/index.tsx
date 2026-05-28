@@ -1,16 +1,57 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
-import categoriesData from './categories.json'
+
+// TRANSLATION
+const lang = window.location.pathname.startsWith('/es') ? 'es' : 'en'
+const categoriesData = (lang === 'es'
+  ? await import('../data/categories.es.json')
+  : await import('../data/categories.en.json')
+).default
 
 
 export const Route = createFileRoute('/')({
   component: FieldNotes,
 })
 
-type SubItem = {
-  label: string
-  desc?: string
-  tag?: 'problem' | 'solution' | 'info'
+// type SubItem = {
+//   label: string
+//   desc?: string
+//   tag?: 'problem' | 'solution' | 'info'
+// }
+
+const t = (keyword: string) => {
+  switch (keyword) {
+    case "desc":
+      switch (lang) {
+        case "es":
+          return "Aquí plasmaré los principales problemas a los que estamos expuestos los humanos en la vida moderna junto con sus soluciones y alternativas."
+        default:
+          return "A reference index of common modern health problems — organised by the domains where mismatch between evolved biology and contemporary environment is most consequential. Click any category to expand."
+      }
+    case "subtitle":
+      switch (lang) {
+        case "es":
+          return "Notas — Nº 001"
+        default:
+          return "Field Notes — Issue 001"
+      }
+    case "title1":
+      switch (lang) {
+        case "es":
+          return "Salud Humana"
+        default:
+          return "Human Health"
+      }
+    case "title2":
+      switch (lang) {
+        case "es":
+          return "Y Vida Diaria"
+        default:
+          return "& Daily Life"
+      }
+    default:
+      return ""
+  }
 }
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -323,7 +364,7 @@ function CategoryCard({ category, index }: { category: Category; index: number }
       <div className={`expanded-panel ${open ? 'open' : ''}`}>
         <div className="expanded-inner">
           <div className="divider" />
-          <div style={{ background: 'var(--bg-expanded)' }} className="px-6 py-6">
+          <div className="px-6 py-6">
 
             {/* Summary */}
             <p
@@ -421,7 +462,7 @@ function FieldNotes() {
           }}
           className="stagger-in stagger-1"
         >
-          Field Notes — Issue 001
+          {t("subtitle")}
         </div>
 
         <h1
@@ -435,7 +476,7 @@ function FieldNotes() {
             color: 'var(--text-primary)',
           }}
         >
-          Human Health
+          {t("title1")}
           <br />
           <em
             style={{
@@ -444,7 +485,7 @@ function FieldNotes() {
               fontWeight: 300,
             }}
           >
-            & Daily Life
+            {t("title2")}
           </em>
         </h1>
 
@@ -461,9 +502,7 @@ function FieldNotes() {
             margin: '0 0 8px',
           }}
         >
-          A reference index of common modern health problems — organised by the
-          domains where mismatch between evolved biology and contemporary
-          environment is most consequential. Click any category to expand.
+          {t("desc")}
         </p>
 
         <div

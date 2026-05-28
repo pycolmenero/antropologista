@@ -1,0 +1,261 @@
+[
+  {
+    "id": "endocrine_disruptors",
+    "icon": "⚗",
+    "label": "DISRUPTORES ENDOCRINOS",
+    "tagline": "Sustancias químicas que interfieren con tu sistema hormonal",
+    "color": "#7a4fa3",
+    "summary": "Los disruptores endocrinos son sustancias químicas que imitan, bloquean o interfieren con las hormonas de tu cuerpo. Para los hombres, los efectos más críticos son la reducción de testosterona, menor calidad del esperma, alteración de la tiroides y mayor riesgo de enfermedades metabólicas. Están en todas partes, pero la exposición puede reducirse significativamente con simples cambios de hábito.",
+    "sections": [
+      {
+        "title": "Alimentación y bebida",
+        "items": [
+          {
+            "label": "Usa vidrio, acero inoxidable o cerámica en lugar de plástico",
+            "desc": "Los envases de plástico liberan continuamente microplásticos y aditivos químicos en los alimentos y bebidas. El riesgo se multiplica con el calor, el contenido graso y la acidez. Se han encontrado microplásticos en sangre humana, pulmones y tejido testicular.",
+            "chemicals": ["microplásticos"],
+            "tag": "solution"
+          },
+          {
+            "label": "Nunca calientes comida en plástico",
+            "desc": "El calor acelera drásticamente la liberación de plastificantes y partículas de microplásticos hacia los alimentos. Esto incluye calentar en recipientes de plástico en el microondas, verter agua hirviendo en vasos de plástico o dejar botellas de plástico al sol dentro del coche.",
+            "chemicals": ["microplásticos", "BPA", "ftalatos"],
+            "tag": "problem"
+          },
+          {
+            "label": "Evita los alimentos enlatados",
+            "desc": "El revestimiento interior de la mayoría de las latas de alimentos y bebidas está recubierto con una resina epoxi que contiene BPA, que se filtra al contenido, especialmente en alimentos ácidos como el tomate. El BPA imita al estrógeno y suprime la testosterona incluso en dosis bajas.",
+            "chemicals": ["BPA"],
+            "tag": "problem"
+          },
+          {
+            "label": "Filtra el agua del grifo",
+            "desc": "El agua del grifo suele contener PFAS (sustancias químicas permanentes), subproductos del cloro, residuos farmacéuticos, pesticidas y metales pesados según la región. Los filtros de carbón activo eliminan la mayoría de los compuestos orgánicos; la ósmosis inversa elimina prácticamente todo, incluidos los PFAS y los metales pesados.",
+            "chemicals": ["PFAS", "pesticidas", "subproductos del cloro"],
+            "tag": "solution"
+          },
+          {
+            "label": "Compra ecológico para los productos más contaminados",
+            "desc": "La 'Docena Sucia' es una lista anual publicada por el EWG con los 12 cultivos más contaminados por pesticidas. Los que encabezan la lista de forma constante: fresas, espinacas, col rizada, melocotones, peras y manzanas. Los pesticidas, especialmente los organofosforados, son neurotóxicos y alteran la señalización hormonal.",
+            "chemicals": ["pesticidas", "organofosforados"],
+            "tag": "solution"
+          },
+          {
+            "label": "Limita el consumo de pescado graso",
+            "desc": "Los pescados grasos grandes como el atún, el pez espada y el salmón de piscifactoría acumulan PCBs y dioxinas a través de la cadena alimentaria, un proceso llamado bioacumulación. Estos compuestos son liposolubles y persisten en el organismo durante años. Prefiere pescados pequeños como sardinas, caballa o anchoas, con niveles de contaminación mucho menores.",
+            "chemicals": ["PCBs", "dioxinas"],
+            "tag": "problem"
+          }
+        ]
+      },
+      {
+        "title": "Higiene personal",
+        "items": [
+          {
+            "label": "Usa desodorante natural",
+            "desc": "Los antitranspirantes convencionales bloquean las glándulas sudoríparas con compuestos de aluminio que se absorben a través de la piel y tienen una actividad estrogénica débil. También suelen contener parabenos (conservantes que imitan al estrógeno) y triclosán (un antibacteriano que altera la función tiroidea). Las axilas son una zona de alta absorción: lo que aplicas ahí llega rápidamente al torrente sanguíneo.",
+            "chemicals": ["aluminio", "parabenos", "triclosán"],
+            "tag": "solution"
+          },
+          {
+            "label": "Elige colonia o perfume sin fragancia sintética o con ingredientes transparentes",
+            "desc": "La palabra 'fragancia' o 'parfum' en una etiqueta es una caja negra legal: los fabricantes no están obligados a revelar qué contiene. Habitualmente esconde docenas de ftalatos (usados para fijar el aroma) y musks sintéticos, ambos disruptores hormonales. Busca marcas que divulguen completamente su lista de ingredientes.",
+            "chemicals": ["ftalatos", "musks sintéticos"],
+            "tag": "solution"
+          },
+          {
+            "label": "Usa jabón natural — evita los productos antibacterianos",
+            "desc": "Los jabones antibacterianos utilizan triclosán o triclocarbán para eliminar bacterias, pero estos compuestos inhiben la síntesis de hormonas tiroideas y alteran el microbioma intestinal. El jabón natural corriente limpia igual de eficazmente sin el coste hormonal.",
+            "chemicals": ["triclosán"],
+            "tag": "solution"
+          },
+          {
+            "label": "Usa champú natural",
+            "desc": "La mayoría de los champús comerciales contienen parabenos como conservantes y DEA/MEA (compuestos de dietanolamina) como agentes espumantes. El DEA reacciona con otros ingredientes formando nitrosaminas, potencialmente cancerígenas. Busca listas de ingredientes cortas y surfactantes de origen vegetal reconocibles.",
+            "chemicals": ["parabenos", "DEA", "MEA"],
+            "tag": "solution"
+          },
+          {
+            "label": "Usa hidratante natural",
+            "desc": "Las cremas y lociones convencionales suelen contener parabenos (conservantes) y oxibenzona (un filtro UV presente en algunos protectores solares). Ambos se absorben a través de la piel y tienen documentada actividad estrogénica. Alternativas: manteca de karité, aceite de coco, aceite de jojoba o marcas con etiquetado limpio certificado.",
+            "chemicals": ["parabenos", "oxibenzona"],
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Hogar",
+        "items": [
+          {
+            "label": "Evita los utensilios antiadherentes",
+            "desc": "Los recubrimientos antiadherentes tradicionales (Teflón y similares) están fabricados con PFAS, sustancias perfluoroalquiladas conocidas como 'químicos eternos' porque no se degradan en el medio ambiente ni en el cuerpo. Con el calor, el recubrimiento se deteriora y libera vapores y partículas de PFAS en los alimentos. Los PFAS están relacionados con la supresión de testosterona, alteración inmune, colesterol elevado y cáncer testicular y renal. Cambia a hierro fundido, acero inoxidable o alternativas con recubrimiento cerámico.",
+            "chemicals": ["PFAS"],
+            "tag": "problem"
+          },
+          {
+            "label": "Evita los ambientadores",
+            "desc": "Los ambientadores enchufables y en spray son una de las fuentes domésticas más concentradas de ftalatos y musks sintéticos. Los inhalas y absorbes de forma continua. Si quieres que tu hogar huela bien, abre las ventanas, usa velas de cera de abeja o difunde aceites esenciales puros.",
+            "chemicals": ["ftalatos", "musks sintéticos"],
+            "tag": "problem"
+          },
+          {
+            "label": "Evita los productos de limpieza antibacterianos",
+            "desc": "Al igual que los jabones antibacterianos, muchos sprays y toallitas de limpieza contienen triclosán o biocidas similares. Limpiar con vinagre blanco diluido, jabón de Castilla o agua y jabón común es igualmente eficaz para las superficies del día a día.",
+            "chemicals": ["triclosán"],
+            "tag": "problem"
+          }
+        ]
+      },
+      {
+        "title": "Otros",
+        "items": [
+          {
+            "label": "Evita manipular tickets y recibos térmicos",
+            "desc": "Los tickets de caja, recibos de cajero y tickets de aparcamiento están impresos en papel térmico recubierto de BPA libre, no BPA ligado como en los plásticos, lo que significa que se absorbe a través de la piel en cuestión de segundos. La tasa de absorción se duplica si tienes las manos húmedas o has usado gel desinfectante recientemente. Rechaza los recibos cuando sea posible o manéjalos lo mínimo.",
+            "chemicals": ["BPA"],
+            "tag": "problem"
+          },
+          {
+            "label": "Evita la ropa interior de poliéster",
+            "desc": "El poliéster es un tejido sintético derivado del petróleo. El calor y la fricción del contacto corporal hacen que libere ftalatos directamente sobre la piel en la zona escrotal, una de las zonas de mayor absorción del cuerpo y la más sensible a la temperatura y la alteración química para la producción de testosterona y la calidad del esperma. Elige algodón, bambú o lana.",
+            "chemicals": ["ftalatos"],
+            "tag": "problem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sleep",
+    "icon": "◑",
+    "label": "PROBLEMAS DE SUEÑO",
+    "tagline": "Dormir mal es la forma más rápida de hundir la testosterona y la función cognitiva",
+    "color": "#3a6ea8",
+    "summary": "La testosterona se produce principalmente durante el sueño profundo. Una sola noche de mal sueño reduce de forma medible los niveles de testosterona del día siguiente. La privación crónica de sueño también eleva el cortisol, acelera el deterioro cognitivo y deteriora la función metabólica. La mayoría de los problemas de sueño tienen causas ambientales solucionables.",
+    "sections": [
+      {
+        "title": "Hábitos y entorno",
+        "items": [
+          {
+            "label": "Bloquea la luz azul después del atardecer",
+            "desc": "Las longitudes de onda de luz azul (400–490 nm) suprimen la producción de melatonina al indicarle al cerebro que aún es de día. Las pantallas (móviles, portátiles, televisores) emiten luz azul intensa. Usar gafas de lentes ámbar o rojas después del atardecer bloquea el espectro relevante y permite que la melatonina suba de forma natural. Como alternativa, activa el modo nocturno completo en los dispositivos y atenúa todas las luces.",
+            "item": "Gafas de lentes rojas o ámbar",
+            "tag": "solution"
+          },
+          {
+            "label": "Suplemento de magnesio",
+            "desc": "El magnesio interviene en más de 300 reacciones enzimáticas y tiene un papel directo en la regulación de la transición del sistema nervioso hacia el descanso. La mayoría de las personas tienen déficit por el agotamiento de los suelos. La forma glicinato es la mejor para el sueño y la ansiedad: está quelada con glicina, un aminoácido inhibidor que por sí mismo favorece el sueño. El treonato es la única forma que atraviesa la barrera hematoencefálica y resulta más beneficiosa a nivel cognitivo y neurológico.",
+            "item": "Glicinato de magnesio (sueño) o Treonato de magnesio (cerebro)",
+            "tag": "solution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mental_health",
+    "icon": "◈",
+    "label": "SALUD MENTAL",
+    "tagline": "La atención es un recurso limitado — protégela",
+    "color": "#4a8a6f",
+    "summary": "Los entornos digitales modernos están diseñados por equipos de científicos del comportamiento para maximizar el tiempo en pantalla. Los mecanismos son los mismos que los de las máquinas tragaperras: intervalos de recompensa variable, bucles de validación social y scroll infinito. Esto no es un problema de fuerza de voluntad, es un problema de diseño. La solución es arquitectónica.",
+    "sections": [
+      {
+        "title": "Hábitos digitales",
+        "items": [
+          {
+            "label": "Elimina el scroll sin propósito",
+            "desc": "El contenido de scroll infinito en formato corto (Reels, TikTok, Shorts) es el formato más destructivo para la atención jamás diseñado. Entrena al cerebro a esperar ciclos de recompensa ultrarrápidos, haciendo que mantener la concentración en cualquier cosa más lenta (leer, conversar, trabajar, estar en la naturaleza) resulte físicamente incómodo. Los estudios muestran reducciones medibles en la capacidad de atención y la memoria de trabajo con su uso regular. La solución no es la moderación sino la eliminación: borra las apps, usa el modo en escala de grises o instala bloqueos de tiempo de pantalla.",
+            "tag": "problem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "testosterone",
+    "icon": "◬",
+    "label": "AUMENTO DE TESTOSTERONA",
+    "tagline": "Factores naturales que impulsan la producción de andrógenos",
+    "color": "#a34f3a",
+    "summary": "La testosterona no es solo una 'hormona de gimnasio': regula la energía, la motivación, la libido, la densidad ósea, la retención muscular, la estabilidad del estado de ánimo y la agudeza cognitiva. Alcanza su pico a mediados de los 20 y disminuye aproximadamente un 1% al año a partir de los 30, pero los factores del estilo de vida pueden acelerar o frenar drásticamente ese descenso.",
+    "sections": [
+      {
+        "title": "Alimentación y suplementación",
+        "items": [
+          {
+            "label": "Come grasas saludables",
+            "desc": "La testosterona es una hormona esteroide sintetizada a partir del colesterol. La grasa dietética, en particular la saturada y la monoinsaturada, es la materia prima. Las dietas bajas en grasas se asocian sistemáticamente con niveles más bajos de testosterona en estudios clínicos. Mejores fuentes: huevos enteros, carne roja, mantequilla, ghee, aceite de oliva, aguacate, frutos secos y pescado azul.",
+            "tag": "solution"
+          },
+          {
+            "label": "Zinc, magnesio y Tongkat Ali",
+            "desc": "El zinc es un cofactor directo en la síntesis de testosterona: su déficit reduce la T de forma fiable. El magnesio mejora la testosterona libre al reducir la unión con la SHBG. El Tongkat Ali (Eurycoma longifolia) es una raíz del sudeste asiático con varios ensayos clínicos que demuestran aumentos significativos en la testosterona libre, la LH y la calidad del esperma. Actúa principalmente reduciendo el cortisol y aumentando la señalización de la hormona luteinizante.",
+            "item": "Zinc + Magnesio + Tongkat Ali — busca una fórmula combinada o añádelos individualmente",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Entrenamiento",
+        "items": [
+          {
+            "label": "Entrenamiento de fuerza",
+            "desc": "El ejercicio de resistencia, en particular los movimientos compuestos y pesados como sentadillas, peso muerto y press, desencadena un pico agudo de testosterona durante y después de la sesión, y a lo largo del tiempo aumenta la densidad de receptores androgénicos de base. La carga mecánica señala al cuerpo que se necesita masa muscular y producción hormonal. Incluso 3 sesiones semanales de 45 minutos producen un beneficio hormonal medible.",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Temperatura",
+        "items": [
+          {
+            "label": "Enfriamiento escrotal",
+            "desc": "Los testículos funcionan de forma óptima a 34-35°C, aproximadamente 2–3°C por debajo de la temperatura corporal central. Por eso son externos al cuerpo. El calor del portátil sobre el regazo, la ropa interior ajustada, los baños calientes o estar sentado durante horas eleva la temperatura escrotal y suprime de forma medible tanto la producción de esperma como la síntesis de testosterona. Usa ropa interior de algodón holgada, date duchas frías y evita la exposición prolongada al calor en esa zona.",
+            "tag": "solution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body_basics",
+    "icon": "◯",
+    "label": "BASES CORPORALES",
+    "tagline": "Los pilares innegociables que mantienen todo el sistema en marcha",
+    "color": "#6e8a3a",
+    "summary": "Esto no son trucos ni optimizaciones, son requisitos biológicos que la vida moderna sedentaria e interior elimina sistemáticamente. Ningún suplemento reemplaza el movimiento diario, la luz solar y el contacto físico con la tierra.",
+    "sections": [
+      {
+        "title": "Movimiento y estructura",
+        "items": [
+          {
+            "label": "Muévete cada día",
+            "desc": "El hueso es tejido vivo que responde directamente a la carga mecánica, un proceso llamado Ley de Wolff. El estrés físico hace que los osteoblastos depositen nueva matriz ósea, haciendo los huesos más densos y resistentes. Estar sentado o tumbado durante mucho tiempo tiene el efecto contrario: sin señales de carga, los osteoclastos degradan el hueso más rápido de lo que se regenera. Los astronautas pierden hasta un 2% de densidad ósea al mes en gravedad cero. No necesitas ejercicio intenso: caminar, cargar peso y el movimiento con el propio peso corporal son suficientes para mantener la integridad ósea.",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Luz solar",
+        "items": [
+          {
+            "label": "Toma el sol cada día",
+            "desc": "La exposición directa al sol sobre la piel desnuda activa la síntesis de vitamina D, una hormona (no técnicamente una vitamina) que regula más de 1.000 genes, incluidos los que gobiernan la función inmune, el estado de ánimo, la producción de testosterona, la absorción de calcio y la inflamación. El déficit de vitamina D es casi universal en latitudes del norte y en personas que trabajan en interiores. 20–30 minutos de sol de mediodía en brazos y torso son aproximadamente suficientes para la mayoría de los tipos de piel. El protector solar bloquea los UVB e impide la síntesis: toma primero tu dosis de sol base.",
+            "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Conexión con la tierra",
+        "items": [
+          {
+            "label": "Camina descalzo con regularidad",
+            "desc": "La práctica de caminar descalzo sobre superficies naturales (hierba, tierra, arena) se llama 'grounding' o 'earthing'. La hipótesis es que el contacto directo de la piel con la tierra permite la transferencia de electrones libres del suelo al cuerpo, lo que podría neutralizar el exceso de radicales libres (estrés oxidativo). Un cuerpo pequeño pero creciente de investigación revisada por pares muestra efectos sobre marcadores inflamatorios, el ritmo del cortisol y la calidad del sueño. La evidencia aún no es concluyente, pero el coste es cero y los inconvenientes son mínimos.",
+            "tag": "info"
+          }
+        ]
+      }
+    ]
+  }
+]
