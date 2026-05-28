@@ -5,6 +5,118 @@
     "label": "ENDOCRINE DISRUPTORS",
     "tagline": "Synthetic chemicals that interfere with your hormonal system",
     "color": "#7a4fa3",
+    "table": {
+      "headers": [
+        "Chemical",
+        "Hormones",
+        "Thyroid",
+        "Metabolism",
+        "Neuro",
+        "Immune",
+        "Cancer"
+      ],
+      "rows": [
+        {
+          "chemical": "BPA / BPS",
+          "hormones": "🔴",
+          "thyroid": "🟠",
+          "metabolism": "🟡",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "🟡"
+        },
+        {
+          "chemical": "Phthalates",
+          "hormones": "🔴",
+          "thyroid": "-",
+          "metabolism": "🟡",
+          "neuro": "🟠",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "Parabens",
+          "hormones": "🟡",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "Triclosan",
+          "hormones": "-",
+          "thyroid": "🔴",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "🟠",
+          "cancer": "-"
+        },
+        {
+          "chemical": "PFAS",
+          "hormones": "-",
+          "thyroid": "🟠",
+          "metabolism": "🔴",
+          "neuro": "🟠",
+          "immune": "🔴",
+          "cancer": "🔴"
+        },
+        {
+          "chemical": "Aluminum",
+          "hormones": "🟡",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "🟠",
+          "immune": "-",
+          "cancer": "🟡"
+        },
+        {
+          "chemical": "Pesticides",
+          "hormones": "-",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "🔴",
+          "immune": "-",
+          "cancer": "🔴"
+        },
+        {
+          "chemical": "Oxybenzone",
+          "hormones": "🟠",
+          "thyroid": "🟡",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "🟡"
+        },
+        {
+          "chemical": "Octinoxate",
+          "hormones": "🟠",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "Homosalate",
+          "hormones": "🟠",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "SLS",
+          "hormones": "-",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "🟡",
+          "cancer": "-"
+        }
+      ]
+    },
     "summary": "Endocrine disruptors are chemicals that mimic, block, or interfere with your body's hormones. For men, the most critical effects are reduced testosterone, lower sperm quality, thyroid disruption, and increased metabolic disease risk. They are everywhere — but exposure can be significantly reduced with simple swaps.",
     "sections": [
       {
@@ -51,6 +163,17 @@
       {
         "title": "Personal Care",
         "items": [
+          {
+            "label": "Use mineral sunscreen only",
+            "desc": "Most commercial sunscreens rely on chemical UV filters that absorb into the bloodstream within hours of application. Oxybenzone (benzophenone-3) is the worst offender — detected in blood, urine, and breast milk and with clear estrogenic activity in cell studies. Octinoxate and homosalate disrupt estrogen, androgen, and progesterone. Octocrylene degrades over time into benzophenone, a known carcinogen. Safe alternatives use zinc oxide or titanium dioxide — mineral filters that sit on top of the skin rather than absorbing into it. Look for 'non-nano' on the label to avoid inhaling fine particles in spray formats.",
+            "chemicals": [
+              "oxybenzone",
+              "octinoxate",
+              "homosalate",
+              "octocrylene"
+            ],
+            "tag": "problem"
+          },
           {
             "label": "Use natural deodorant",
             "desc": "Conventional antiperspirants block sweat glands using aluminum compounds, which are absorbed through the skin and have weak estrogenic activity. They also commonly contain parabens (preservatives that mimic estrogen) and triclosan (an antibacterial that disrupts thyroid function). Armpits are a high-absorption zone — what you put there enters the bloodstream quickly.",
@@ -189,7 +312,7 @@
             "tag": "solution"
           },
           {
-            "label": "Zinc, Magnesium & Tongkat Ali",
+            "label": "Zinc, Magnesium, Vitamin D & Tongkat Ali",
             "desc": "Zinc is a direct cofactor in testosterone synthesis — deficiency reliably lowers T. Magnesium improves free testosterone by reducing SHBG binding. Tongkat Ali (Eurycoma longifolia) is a Southeast Asian root with multiple clinical trials showing significant increases in free testosterone, LH, and sperm quality. It works primarily by reducing cortisol and increasing luteinising hormone signalling.",
             "item": "Zinc + Magnesium + Tongkat Ali — look for a combined multi or stack these individually",
             "tag": "solution"
@@ -240,9 +363,20 @@
         "title": "Sunlight",
         "items": [
           {
-            "label": "Sunbathe every day",
-            "desc": "Direct sun exposure on bare skin triggers vitamin D synthesis — a hormone (not technically a vitamin) that regulates over 1,000 genes, including those governing immune function, mood, testosterone production, calcium absorption, and inflammation. Vitamin D deficiency is near-universal in northern latitudes and in people who work indoors. 20–30 minutes of midday sun on arms and torso is roughly sufficient for most skin types. Sunscreen blocks UVB and prevents synthesis — get your baseline sun first.",
+            "label": "Sunbathe every day — but time it right",
+            "desc": "Direct sun on bare skin triggers vitamin D synthesis — a hormone (not technically a vitamin) regulating over 1,000 genes, including those governing immune function, mood, testosterone production, calcium absorption, and inflammation. Vitamin D deficiency is near-universal in people who work indoors. Aim for 20–30 minutes on arms and torso during morning or late afternoon light — before 11am or after 4pm — when UVB is present but UV index is lower. Midday sun (11am–4pm) delivers the most intense radiation and the highest burn risk before any protective tan has built up. Skin does adapt: repeated moderate exposure thickens the epidermis and increases melanin, providing roughly SPF 3–4 of natural protection over time. Build a base gradually rather than shocking the skin. Note: sunscreen blocks UVB and prevents vitamin D synthesis — get your baseline sun first, apply mineral sunscreen (zinc oxide or titanium dioxide) only for extended midday exposure. See Endocrine Disruptors for which sunscreen filters to avoid.",
             "tag": "solution"
+          }
+        ]
+      },
+      {
+        "title": "Teeth health",
+        "items": [
+          {
+            "label": "Teeth: brushing is damage control, not the solution",
+            "desc": "Pre-agricultural human skulls show cavity rates under 2%. Post-sugar-introduction they exceed 30%. The cause is not poor hygiene — it is diet. Streptococcus mutans ferments refined carbohydrates and sugar, producing acid that dissolves enamel. No sugar, no acid, no cavity. Brushing manages the symptoms of a diet that creates chronic bacterial overgrowth. Dietary changes that actually prevent cavities: eliminate refined sugar and flour, reduce snacking frequency (saliva needs time between meals to remineralise enamel), eat mineral-rich foods (dairy, bone broth, leafy greens) to keep saliva alkaline and saturated with calcium and phosphate. For toothpaste, avoid sodium lauryl sulphate (SLS, a harsh detergent that damages the oral mucosa), triclosan (an antibacterial endocrine disruptor), and artificial sweeteners. Fluoride remains genuinely effective at hardening enamel — the debate is about systemic ingestion, not topical use. Alternatively, miswak (Salvadora persica chew sticks) have been used for thousands of years and contain natural fluoride compounds, antibacterials, and astringents — multiple studies show comparable plaque removal to a toothbrush.",
+            "item": "Toothpaste: look for SLS-free, triclosan-free formulas — or try miswak sticks",
+            "tag": "info"
           }
         ]
       },

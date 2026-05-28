@@ -5,46 +5,216 @@
     "label": "DISRUPTORES ENDOCRINOS",
     "tagline": "Sustancias químicas que interfieren con tu sistema hormonal",
     "color": "#7a4fa3",
-    "summary": "Los disruptores endocrinos son sustancias químicas que imitan, bloquean o interfieren con las hormonas de tu cuerpo. Para los hombres, los efectos más críticos son la reducción de testosterona, menor calidad del esperma, alteración de la tiroides y mayor riesgo de enfermedades metabólicas. Están en todas partes, pero la exposición puede reducirse significativamente con simples cambios de hábito.",
+    "summary": "Los disruptores endocrinos son sustancias químicas que imitan, bloquean o interfieren con las hormonas de tu cuerpo. Para los hombres, los efectos más críticos son la reducción de testosterona, menor calidad del esperma, alteración de la tiroides y mayor riesgo de enfermedades metabólicas.",
+    "table": {
+      "headers": [
+        "Químico",
+        "Hormonas",
+        "Tiroides",
+        "Metabolismo",
+        "Neuro",
+        "Inmune",
+        "Cáncer"
+      ],
+      "rows": [
+        {
+          "chemical": "BPA / BPS",
+          "hormones": "🔴",
+          "thyroid": "🟠",
+          "metabolism": "🟡",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "🟡"
+        },
+        {
+          "chemical": "Ftalatos",
+          "hormones": "🔴",
+          "thyroid": "-",
+          "metabolism": "🟡",
+          "neuro": "🟠",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "Parabenos",
+          "hormones": "🟡",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "Triclosán",
+          "hormones": "-",
+          "thyroid": "🔴",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "🟠",
+          "cancer": "-"
+        },
+        {
+          "chemical": "PFAS",
+          "hormones": "-",
+          "thyroid": "🟠",
+          "metabolism": "🔴",
+          "neuro": "🟠",
+          "immune": "🔴",
+          "cancer": "🔴"
+        },
+        {
+          "chemical": "Aluminio",
+          "hormones": "🟡",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "🟠",
+          "immune": "-",
+          "cancer": "🟡"
+        },
+        {
+          "chemical": "Pesticidas",
+          "hormones": "-",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "🔴",
+          "immune": "-",
+          "cancer": "🔴"
+        },
+        {
+          "chemical": "Oxibenzona",
+          "hormones": "🟠",
+          "thyroid": "🟡",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "🟡"
+        },
+        {
+          "chemical": "Octinoxato",
+          "hormones": "🟠",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "Homosalato",
+          "hormones": "🟠",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "-",
+          "cancer": "-"
+        },
+        {
+          "chemical": "SLS",
+          "hormones": "-",
+          "thyroid": "-",
+          "metabolism": "-",
+          "neuro": "-",
+          "immune": "🟡",
+          "cancer": "-"
+        }
+      ]
+    },
     "sections": [
       {
         "title": "Alimentación y bebida",
         "items": [
           {
-            "label": "Usa vidrio, acero inoxidable o cerámica en lugar de plástico",
-            "desc": "Los envases de plástico liberan continuamente microplásticos y aditivos químicos en los alimentos y bebidas. El riesgo se multiplica con el calor, el contenido graso y la acidez. Se han encontrado microplásticos en sangre humana, pulmones y tejido testicular.",
-            "chemicals": ["microplásticos"],
-            "tag": "solution"
-          },
-          {
-            "label": "Nunca calientes comida en plástico",
-            "desc": "El calor acelera drásticamente la liberación de plastificantes y partículas de microplásticos hacia los alimentos. Esto incluye calentar en recipientes de plástico en el microondas, verter agua hirviendo en vasos de plástico o dejar botellas de plástico al sol dentro del coche.",
-            "chemicals": ["microplásticos", "BPA", "ftalatos"],
-            "tag": "problem"
-          },
-          {
             "label": "Evita los alimentos enlatados",
-            "desc": "El revestimiento interior de la mayoría de las latas de alimentos y bebidas está recubierto con una resina epoxi que contiene BPA, que se filtra al contenido, especialmente en alimentos ácidos como el tomate. El BPA imita al estrógeno y suprime la testosterona incluso en dosis bajas.",
+            "short": "El revestimiento interior de la mayoría de las latas contiene BPA, que se filtra especialmente en alimentos ácidos como el tomate. El BPA imita al estrógeno incluso en dosis bajas.",
+            "long": "<p>La mayoría de las latas de conserva están recubiertas interiormente con una resina epoxi que contiene <b>BPA (bisfenol A)</b>. Este compuesto <a href='https://doi.org/10.1289/ehp.1205146' target='_blank'>se filtra hacia el contenido</a>, especialmente en alimentos ácidos como tomate, frutas o legumbres.</p><br/><p>Un estudio de la <a href='https://doi.org/10.1016/j.envres.2011.01.022' target='_blank'>Universidad de Harvard</a> demostró que consumir sopa enlatada durante 5 días consecutivos <b>aumentó los niveles urinarios de BPA un 1.221%</b> respecto al grupo que consumió sopa fresca.</p><br/><p>El BPA actúa como <b>estrógeno sintético</b>: se une a receptores estrogénicos, reduce la testosterona libre y altera la producción de esperma incluso a concentraciones muy bajas. Algunos fabricantes han migrado a BPS o BPF como sustitutos, pero <a href='https://doi.org/10.1289/ehp.1408989' target='_blank'>presentan efectos similares</a>.</p><br/><p>Alternativas: conservas en <b>tarro de vidrio</b>, o cocinar legumbres secas.</p>",
             "chemicals": ["BPA"],
-            "tag": "problem"
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "BPA en latas y migración a alimentos",
+                "url": "https://doi.org/10.1289/ehp.1205146"
+              },
+              {
+                "label": "Sopa enlatada y niveles urinarios de BPA — Harvard",
+                "url": "https://doi.org/10.1016/j.envres.2011.01.022"
+              },
+              {
+                "label": "BPS y BPF como sustitutos con efectos similares",
+                "url": "https://doi.org/10.1289/ehp.1408989"
+              }
+            ]
           },
           {
             "label": "Filtra el agua del grifo",
-            "desc": "El agua del grifo suele contener PFAS (sustancias químicas permanentes), subproductos del cloro, residuos farmacéuticos, pesticidas y metales pesados según la región. Los filtros de carbón activo eliminan la mayoría de los compuestos orgánicos; la ósmosis inversa elimina prácticamente todo, incluidos los PFAS y los metales pesados.",
+            "short": "El agua del grifo puede contener PFAS, pesticidas, residuos farmacéuticos y metales pesados. El carbón activo elimina la mayoría; la ósmosis inversa elimina prácticamente todo.",
+            "long": "<p>El agua del grifo en la mayoría de países desarrollados cumple los estándares legales mínimos, pero eso no significa que esté libre de disruptores endocrinos. <a href='https://doi.org/10.1021/acs.estlett.0c00748' target='_blank'>Un análisis de 2020</a> detectó <b>PFAS en el agua potable de 43 estados de EEUU</b>, muchos por encima de los límites de seguridad propuestos.</p><br/><p>Contaminantes habituales:<ul><li><b>PFAS</b> — sustancias perfluoroalquiladas, disruptores hormonales e inmunes persistentes</li><li><b>Atrazina</b> — herbicida con actividad estrogénica documentada</li><li><b>Subproductos del cloro</b> — trihalometanos, potencialmente carcinogénicos</li><li><b>Residuos farmacéuticos</b> — anticonceptivos, antidepresivos no eliminados en depuradoras</li><li><b>Metales pesados</b> — plomo, arsénico según infraestructura</li></ul></p><br/><p>Opciones de filtrado:<ul><li><b>Carbón activo</b> (jarras tipo Brita, filtros bajo el fregadero): elimina cloro, pesticidas y compuestos orgánicos</li><li><b>Ósmosis inversa</b>: elimina PFAS, metales pesados, nitratos y prácticamente todo lo demás. Es la opción más completa.</li></ul></p>",
             "chemicals": ["PFAS", "pesticidas", "subproductos del cloro"],
-            "tag": "solution"
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "PFAS en agua potable — análisis nacional EEUU (2020)",
+                "url": "https://doi.org/10.1021/acs.estlett.0c00748"
+              }
+            ]
           },
           {
             "label": "Compra ecológico para los productos más contaminados",
-            "desc": "La 'Docena Sucia' es una lista anual publicada por el EWG con los 12 cultivos más contaminados por pesticidas. Los que encabezan la lista de forma constante: fresas, espinacas, col rizada, melocotones, peras y manzanas. Los pesticidas, especialmente los organofosforados, son neurotóxicos y alteran la señalización hormonal.",
+            "short": "La 'Docena Sucia' del EWG lista los 12 cultivos con más residuos de pesticidas. Los organofosforados son neurotóxicos y alteran la señalización hormonal. Comprar ecológico en estos productos específicos reduce significativamente la exposición.",
+            "long": "<p>No todos los productos convencionales son igual de problemáticos. El <b>EWG (Environmental Working Group)</b> publica anualmente la <a href='https://www.ewg.org/foodnews/dirty-dozen.php' target='_blank'>Dirty Dozen</a>, la lista de los 12 cultivos con mayor carga de pesticidas.</p><br/><p>Encabezan la lista de forma consistente: <b>fresas, espinacas, col rizada, melocotones, peras, manzanas, uvas, pimientos y arándanos</b>.</p><br/><p>Los <b>pesticidas organofosforados</b> — los más comunes en agricultura convencional — <a href='https://doi.org/10.1289/ehp.1002705' target='_blank'>inhiben la acetilcolinesterasa</a>, una enzima crítica para la transmisión nerviosa. A exposición crónica baja se asocian con <b>reducción cognitiva, alteraciones hormonales y mayor riesgo de Parkinson</b>.</p><br/><p>Estrategia práctica: compra ecológico <u>solo para los productos de la Dirty Dozen</u>. Para el resto (la <b>Clean Fifteen</b>: aguacates, maíz dulce, piña, cebollas...) el convencional es razonablemente seguro.</p>",
             "chemicals": ["pesticidas", "organofosforados"],
-            "tag": "solution"
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Dirty Dozen — EWG",
+                "url": "https://www.ewg.org/foodnews/dirty-dozen.php"
+              },
+              {
+                "label": "Organofosforados y neurotoxicidad crónica",
+                "url": "https://doi.org/10.1289/ehp.1002705"
+              }
+            ]
           },
           {
-            "label": "Limita el consumo de pescado graso",
-            "desc": "Los pescados grasos grandes como el atún, el pez espada y el salmón de piscifactoría acumulan PCBs y dioxinas a través de la cadena alimentaria, un proceso llamado bioacumulación. Estos compuestos son liposolubles y persisten en el organismo durante años. Prefiere pescados pequeños como sardinas, caballa o anchoas, con niveles de contaminación mucho menores.",
+            "label": "Limita el consumo de pescado graso grande",
+            "short": "El atún, pez espada y salmón de piscifactoría acumulan PCBs y dioxinas a través de la cadena alimentaria. Prefiere pescados pequeños como sardinas, caballa o anchoas.",
+            "long": "<p>Los contaminantes orgánicos persistentes como los <b>PCBs</b> y las <b>dioxinas</b> son liposolubles y se acumulan en tejido graso a través de la cadena alimentaria — un proceso llamado <b>bioacumulación</b>. Cuanto más grande y más arriba en la cadena trófica, mayor concentración.</p><br/><p><a href='https://doi.org/10.1289/ehp.7782' target='_blank'>Estudios han demostrado</a> que la exposición crónica a PCBs se asocia con <b>reducción de testosterona, alteración tiroidea y mayor riesgo de cáncer de próstata</b>.</p><br/><p>Pescados más contaminados: <b>atún rojo, pez espada, tiburón, marlín, salmón de piscifactoría</b>.<br/>Pescados más seguros y igualmente nutritivos: <b>sardinas, caballa, anchoas, arenque</b> — pequeños, de vida corta, con menor acumulación.</p><br/><p>El <b>salmón salvaje</b> (especialmente el sockeye del Pacífico) es un buen término medio: rico en omega-3 y con menor carga de contaminantes que el de piscifactoría.</p>",
             "chemicals": ["PCBs", "dioxinas"],
-            "tag": "problem"
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "PCBs, testosterona y riesgo de cáncer de próstata",
+                "url": "https://doi.org/10.1289/ehp.7782"
+              }
+            ]
+          },
+          {
+            "label": "Usa vidrio, acero inoxidable o cerámica en lugar de plástico",
+            "short": "Los envases de plástico liberan microplásticos y disruptores químicos en los alimentos, especialmente con el calor. Microplásticos ya han sido detectados en sangre y tejido testicular humano.",
+            "long": "<p>Los envases de plástico liberan continuamente <b>microplásticos</b> y aditivos químicos hacia los alimentos y bebidas. El riesgo se multiplica con el calor, el contenido graso y la acidez.</p><br/><p>Un <a href='https://doi.org/10.1016/j.envint.2022.107199' target='_blank'>estudio de 2022</a> detectó microplásticos en <b>el 80% de las muestras de sangre humana</b> analizadas. Otro estudio de 2024 publicado en <a href='https://doi.org/10.1093/humrep/dead235' target='_blank'><i>Human Reproduction</i></a> encontró microplásticos en <b>tejido testicular humano</b>, correlacionados con menor concentración de esperma.</p><br/><p>Alternativas prácticas:<ul><li>Agua en botella de <b>acero inoxidable o vidrio</b></li><li>Tuppers de <b>vidrio o cerámica</b> para guardar comida</li><li>Evitar bandejas de plástico en el horno o microondas</li></ul></p>",
+            "chemicals": ["microplásticos"],
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Microplásticos en sangre humana (2022)",
+                "url": "https://doi.org/10.1016/j.envint.2022.107199"
+              },
+              {
+                "label": "Microplásticos en tejido testicular y calidad espermática",
+                "url": "https://doi.org/10.1093/humrep/dead235"
+              }
+            ]
+          },
+          {
+            "label": "Nunca calientes comida en plástico",
+            "short": "El calor acelera drásticamente la liberación de BPA, ftalatos y microplásticos hacia los alimentos. Incluye el microondas, agua hirviendo en vasos de plástico y botellas al sol.",
+            "long": "<p>El calor es el principal acelerador de la migración química desde el plástico hacia los alimentos. <a href='https://doi.org/10.1021/es902481f' target='_blank'>Estudios han demostrado</a> que calentar en recipientes de policarbonato <b>aumenta la liberación de BPA hasta 55 veces</b> respecto a temperatura ambiente.</p><br/><p>Situaciones de riesgo habitual:<ul><li>Microondas con recipiente de plástico</li><li>Agua hirviendo en vasos o botellas de plástico</li><li>Botellas de plástico expuestas al sol en el coche</li><li>Café o sopa en vasos de plástico desechables</li></ul></p><br/><p>El <b>BPA</b> imita al estrógeno y suprime la testosterona. Los <b>ftalatos</b> interfieren con la síntesis de andrógenos. Ambos son especialmente dañinos en dosis bajas y acumuladas.</p>",
+            "chemicals": ["microplásticos", "BPA", "ftalatos"],
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Calor y liberación de BPA desde policarbonato",
+                "url": "https://doi.org/10.1021/es902481f"
+              }
+            ]
           }
         ]
       },
@@ -53,33 +223,98 @@
         "items": [
           {
             "label": "Usa desodorante natural",
-            "desc": "Los antitranspirantes convencionales bloquean las glándulas sudoríparas con compuestos de aluminio que se absorben a través de la piel y tienen una actividad estrogénica débil. También suelen contener parabenos (conservantes que imitan al estrógeno) y triclosán (un antibacteriano que altera la función tiroidea). Las axilas son una zona de alta absorción: lo que aplicas ahí llega rápidamente al torrente sanguíneo.",
+            "short": "Los antitranspirantes convencionales contienen aluminio, parabenos y triclosán, todos absorbidos a través de la piel en una zona de alta permeabilidad. El aluminio tiene actividad estrogénica débil; los parabenos imitan al estrógeno directamente. <b>Alternativa</b>: desodorantes con <b>bicarbonato, aceites esenciales, piedra de alumbre natural</b>",
+            "long": "<p>Las axilas son una <b>zona de alta absorción dérmica</b>: la piel es fina, frecuentemente rasurada (lo que aumenta la permeabilidad) y está en contacto continuo con el producto.</p><br/><p>Ingredientes a evitar:<ul><li><b>Sales de aluminio</b> (clorhidrato de aluminio, zirconio): bloquean los poros y tienen <a href='https://doi.org/10.1186/1475-2867-5-17' target='_blank'>actividad estrogénica documentada</a> en tejido mamario y potencial relación con cáncer de mama</li><li><b>Parabenos</b> (methylparaben, propylparaben): conservantes con actividad estrogénica. <a href='https://doi.org/10.1016/j.jsbmb.2004.12.036' target='_blank'>Se han detectado en tumores de mama</a> intactos, sin metabolizar</li><li><b>Triclosán</b>: antibacteriano que inhibe la síntesis de hormonas tiroideas y altera el microbioma cutáneo</li></ul></p><br/><p>Alternativas naturales efectivas: desodorantes con <b>bicarbonato, aceites esenciales, piedra de alumbre natural</b> (cristal de alumbre — distinto de las sales de aluminio sintéticas), o simplemente <b>aceite de coco con unas gotas de aceite esencial</b>.</p>",
             "chemicals": ["aluminio", "parabenos", "triclosán"],
-            "tag": "solution"
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Actividad estrogénica de sales de aluminio en tejido mamario",
+                "url": "https://doi.org/10.1186/1475-2867-5-17"
+              },
+              {
+                "label": "Parabenos intactos detectados en tumores de mama",
+                "url": "https://doi.org/10.1016/j.jsbmb.2004.12.036"
+              }
+            ]
           },
           {
-            "label": "Elige colonia o perfume sin fragancia sintética o con ingredientes transparentes",
-            "desc": "La palabra 'fragancia' o 'parfum' en una etiqueta es una caja negra legal: los fabricantes no están obligados a revelar qué contiene. Habitualmente esconde docenas de ftalatos (usados para fijar el aroma) y musks sintéticos, ambos disruptores hormonales. Busca marcas que divulguen completamente su lista de ingredientes.",
+            "label": "Elige colonia o perfume sin fragancia sintética",
+            "short": "La palabra 'fragancia' en una etiqueta oculta legalmente docenas de ingredientes, incluyendo ftalatos y musks sintéticos. Ambos son disruptores hormonales. <b>Alternativa</b>: marcas con listas de ingredientes completas.",
+            "long": "<p>En la UE y EEUU, los fabricantes pueden listar una mezcla de hasta <b>cientos de ingredientes</b> bajo una sola palabra: <i>fragrance</i>, <i>parfum</i> o <i>aroma</i>. Es una protección legal para las fórmulas propietarias, pero deja al consumidor completamente a oscuras.</p><br/><p>Lo que suele esconderse:<ul><li><b>Ftalatos</b> (DBP, DEHP, DEP): usados para fijar el aroma. <a href='https://doi.org/10.1289/ehp.7410' target='_blank'>Estudios asocian</a> la exposición a ftalatos con <b>reducción de testosterona, menor volumen testicular y alteraciones del desarrollo sexual</b></li><li><b>Musks sintéticos</b> (galaxolide, tonalide): persistentes en el organismo, con actividad hormonal débil pero acumulativa</li></ul></p><br/><p>Alternativas: perfumes con <b>ingredientes completamente declarados</b>, o fragancias basadas en <b>aceites esenciales puros</b> sin base sintética. Marcas como <i>Abel</i>, <i>Phlur</i> o <i>Ellis Brooklyn</i> tienen políticas de transparencia total.</p>",
             "chemicals": ["ftalatos", "musks sintéticos"],
-            "tag": "solution"
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Ftalatos, testosterona y desarrollo reproductor masculino",
+                "url": "https://doi.org/10.1289/ehp.7410"
+              }
+            ]
           },
           {
-            "label": "Usa jabón natural — evita los productos antibacterianos",
-            "desc": "Los jabones antibacterianos utilizan triclosán o triclocarbán para eliminar bacterias, pero estos compuestos inhiben la síntesis de hormonas tiroideas y alteran el microbioma intestinal. El jabón natural corriente limpia igual de eficazmente sin el coste hormonal.",
+            "label": "Usa jabón natural — evita los antibacterianos",
+            "short": "El triclosán de los jabones antibacterianos inhibe la síntesis tiroidea y altera el microbioma. <b>Alternativa</b>: jabón normal, limpia igual de bien.",
+            "long": "<p>Durante décadas se comercializaron jabones antibacterianos como superiores al jabón convencional. En 2016, la <a href='https://www.fda.gov/news-events/press-announcements/fda-issues-final-rule-over-counter-antibacterial-soaps' target='_blank'>FDA prohibió el triclosán y 18 ingredientes antibacterianos más</a> en jabones de manos tras concluir que <b>no son más efectivos que el jabón y agua normales</b> para prevenir infecciones.</p><br/><p>El problema:<ul><li>El <b>triclosán</b> inhibe la enzima <b>ENR (enoyl-ACP reductasa)</b>, bloqueando la síntesis de ácidos grasos bacterianos. En humanos, interfiere con la <b>síntesis de hormonas tiroideas</b> y altera el microbioma cutáneo e intestinal</li><li>Contribuye al desarrollo de <b>resistencias antibióticas</b></li><li><a href='https://doi.org/10.1289/ehp.1409288' target='_blank'>Estudios en animales</a> muestran efectos sobre función tiroidea, hepática e inflamación</li></ul></p><br/><p>Alternativas: cualquier jabón natural con <b>base saponificada de aceites vegetales</b> (castilla, marseille, alepo) sin fragancia sintética ni conservantes.</p>",
             "chemicals": ["triclosán"],
-            "tag": "solution"
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "FDA — prohibición del triclosán en jabones (2016)",
+                "url": "https://www.fda.gov/news-events/press-announcements/fda-issues-final-rule-over-counter-antibacterial-soaps"
+              },
+              {
+                "label": "Triclosán y efectos sobre tiroides e inflamación",
+                "url": "https://doi.org/10.1289/ehp.1409288"
+              }
+            ]
           },
           {
             "label": "Usa champú natural",
-            "desc": "La mayoría de los champús comerciales contienen parabenos como conservantes y DEA/MEA (compuestos de dietanolamina) como agentes espumantes. El DEA reacciona con otros ingredientes formando nitrosaminas, potencialmente cancerígenas. Busca listas de ingredientes cortas y surfactantes de origen vegetal reconocibles.",
+            "short": "Los champús comerciales suelen contener parabenos como conservantes y DEA/MEA como espumantes, potencialmente carcinogénicas al reaccionar con otros ingredientes. <p><b>Alternativa</b>: champús con listas de ingredientes cortas y de origen vegetal (<b>decyl glucoside, coco glucoside</b>) y sin fragancia sintética.</p>",
+            "long": "<p>El cuero cabelludo tiene una absorción dérmica elevada. Los ingredientes problemáticos más comunes en champús convencionales:</p><br/><ul><li><b>Parabenos</b> (methylparaben, ethylparaben, propylparaben): conservantes con actividad estrogénica documentada. Presentes en la mayoría de champús convencionales como conservante barato</li><li><b>DEA / MEA / TEA</b> (dietanolamina y derivados): agentes espumantes que reaccionan con nitritos presentes en la fórmula para formar <b>nitrosaminas</b>, clasificadas como <a href='https://doi.org/10.1093/jnci/79.6.1346' target='_blank'>probablemente carcinogénicas</a> por la IARC</li><li><b>Sulfatos</b> (SLS, SLES): no son disruptores endocrinos pero dañan la barrera cutánea y favorecen la absorción de otros ingredientes</li></ul><br/><p>Busca champús con listas de ingredientes cortas, surfactantes de origen vegetal (<b>decyl glucoside, coco glucoside</b>) y sin fragancia sintética.</p>",
             "chemicals": ["parabenos", "DEA", "MEA"],
-            "tag": "solution"
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Nitrosaminas y carcinogenicidad — IARC",
+                "url": "https://doi.org/10.1093/jnci/79.6.1346"
+              }
+            ]
           },
           {
             "label": "Usa hidratante natural",
-            "desc": "Las cremas y lociones convencionales suelen contener parabenos (conservantes) y oxibenzona (un filtro UV presente en algunos protectores solares). Ambos se absorben a través de la piel y tienen documentada actividad estrogénica. Alternativas: manteca de karité, aceite de coco, aceite de jojoba o marcas con etiquetado limpio certificado.",
+            "short": "Las cremas convencionales suelen contener parabenos y oxibenzona. Ambos se absorben a través de la piel y tienen actividad estrogénica documentada. <b>Alternativas</b>: manteca de karité, aceite de jojoba o aceite de coco.",
+            "long": "<p>La piel absorbe una fracción significativa de lo que se le aplica, especialmente en zonas finas o húmedas. Los ingredientes más problemáticos en hidratantes convencionales:</p><br/><ul><li><b>Parabenos</b>: ya descritos en champú y desodorante. En cremas de cuerpo la superficie de exposición es mucho mayor</li><li><b>Oxibenzona</b>: filtro UV presente en hidratantes con SPF. <a href='https://doi.org/10.1021/acs.chemrestox.9b00348' target='_blank'>Se detecta en sangre</a> pocas horas tras la aplicación y tiene actividad estrogénica en estudios celulares. También se ha encontrado en leche materna</li><li><b>Fragancia sintética</b>: como en perfumes, oculta ftalatos y musks</li></ul><br/><p>Alternativas efectivas y limpias:<ul><li><b>Manteca de karité</b> — hidratación profunda, rica en vitaminas A y E</li><li><b>Aceite de jojoba</b> — similar al sebo cutáneo, no comedogénico</li><li><b>Aceite de coco virgen</b> — antibacteriano natural, aunque puede obstruir poros en cara</li></ul></p>",
             "chemicals": ["parabenos", "oxibenzona"],
-            "tag": "solution"
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Oxibenzona en sangre tras aplicación tópica",
+                "url": "https://doi.org/10.1021/acs.chemrestox.9b00348"
+              }
+            ]
+          },
+          {
+            "label": "Usa solo protector solar mineral",
+            "short": "Los filtros UV químicos como la oxibenzona, octinoxato y homosalato se absorben en sangre y tienen actividad hormonal. Los minerales (óxido de zinc, dióxido de titanio) actúan sobre la superficie sin absorberse. <b>Alternativa</b>: protectores con <b>óxido de zinc</b> o <b>dióxido de titanio</b> como único filtro.",
+            "long": "<p>En 2019, la FDA publicó un estudio que demostró que <a href='https://doi.org/10.1001/jama.2019.5586' target='_blank'>cuatro filtros UV químicos comunes — oxibenzona, octinoxato, octocryleno y homosalato — <b>alcanzan concentraciones sistémicas en sangre muy por encima del umbral de seguridad</b></a> tras una sola aplicación.</p><br/><p>Efectos documentados:<ul><li><b>Oxibenzona</b>: actividad estrogénica en estudios celulares, detectada en leche materna y orina. <a href='https://doi.org/10.1289/ehp.9880' target='_blank'>Asociada con reducción de testosterona</a> en hombres adultos</li><li><b>Octinoxato</b>: actividad estrogénica, altera la función tiroidea en animales</li><li><b>Homosalato</b>: interfiere con estrógeno, andrógenos y progesterona</li><li><b>Octocryleno</b>: se degrada con el tiempo en <b>benzofenona</b>, clasificada como posible carcinógeno</li></ul></p><br/><p>Alternativas seguras: protectores con <b>óxido de zinc</b> o <b>dióxido de titanio</b> como único filtro. Actúan físicamente reflejando la radiación, sin absorberse. Busca <b>'non-nano'</b> en el formato spray para evitar inhalación de partículas finas.</p>",
+            "chemicals": [
+              "oxibenzona",
+              "octinoxato",
+              "homosalato",
+              "octocryleno"
+            ],
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Filtros UV químicos en sangre — FDA (2019)",
+                "url": "https://doi.org/10.1001/jama.2019.5586"
+              },
+              {
+                "label": "Oxibenzona y testosterona en hombres adultos",
+                "url": "https://doi.org/10.1289/ehp.9880"
+              }
+            ]
           }
         ]
       },
@@ -88,21 +323,42 @@
         "items": [
           {
             "label": "Evita los utensilios antiadherentes",
-            "desc": "Los recubrimientos antiadherentes tradicionales (Teflón y similares) están fabricados con PFAS, sustancias perfluoroalquiladas conocidas como 'químicos eternos' porque no se degradan en el medio ambiente ni en el cuerpo. Con el calor, el recubrimiento se deteriora y libera vapores y partículas de PFAS en los alimentos. Los PFAS están relacionados con la supresión de testosterona, alteración inmune, colesterol elevado y cáncer testicular y renal. Cambia a hierro fundido, acero inoxidable o alternativas con recubrimiento cerámico.",
+            "short": "El teflón y recubrimientos similares liberan PFAS al calentarse. Los PFAS son 'químicos eternos' que no se degradan, se acumulan en el cuerpo y están asociados con supresión hormonal, inmune y cáncer testicular.",
+            "long": "<p>Los recubrimientos antiadherentes tradicionales (PTFE / Teflón) se fabrican con o liberan <b>PFAS</b> al degradarse con el calor. A partir de los <b>260°C</b> el recubrimiento empieza a descomponerse; a 300°C libera gases tóxicos. Una sartén antiadherente alcanza esas temperaturas en minutos a fuego alto.</p><br/><p>Los <b>PFAS (sustancias per y polifluoroalquiladas)</b> son llamados 'químicos eternos' porque <a href='https://doi.org/10.1289/ehp.1408116' target='_blank'>no se degradan ni en el medio ambiente ni en el organismo</a>. Se bioacumulan en tejido graso y sangre durante décadas.</p><br/><p>Efectos en hombres documentados:<ul><li><b>Supresión de testosterona</b> libre y total</li><li><b>Alteración tiroidea</b></li><li><b>Colesterol elevado</b></li><li>Mayor riesgo de <b>cáncer testicular y renal</b></li><li><b>Supresión inmune</b>: reducción de la respuesta a vacunas</li></ul></p><br/><p>Alternativas duraderas:<ul><li><b>Hierro fundido</b> — indestructible, mejora con el uso, aporta hierro a la dieta</li><li><b>Acero inoxidable</b> — neutro, apto para altas temperaturas</li><li><b>Cerámica</b> (recubrimiento cerámico sin PTFE) — antiadherente natural, pero menos duradera</li></ul></p>",
             "chemicals": ["PFAS"],
-            "tag": "problem"
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "PFAS — bioacumulación y efectos en salud humana",
+                "url": "https://doi.org/10.1289/ehp.1408116"
+              }
+            ]
           },
           {
             "label": "Evita los ambientadores",
-            "desc": "Los ambientadores enchufables y en spray son una de las fuentes domésticas más concentradas de ftalatos y musks sintéticos. Los inhalas y absorbes de forma continua. Si quieres que tu hogar huela bien, abre las ventanas, usa velas de cera de abeja o difunde aceites esenciales puros.",
+            "short": "Los ambientadores enchufables y en spray son una fuente doméstica concentrada de ftalatos y musks sintéticos. Los inhalas continuamente. Ventila, usa velas de cera de abeja o aceites esenciales puros.",
+            "long": "<p>Los ambientadores comerciales están formulados para liberar fragancia de forma continua en el aire, lo que significa <b>exposición inhalatoria constante</b> a sus ingredientes — muchos de los cuales nunca se declaran en la etiqueta.</p><br/><p>Un <a href='https://doi.org/10.1016/j.atmosenv.2010.10.060' target='_blank'>estudio de emisiones</a> analizó ambientadores populares y detectó <b>más de 100 compuestos volátiles distintos</b>, incluyendo ftalatos, musks sintéticos, terpenos oxidados y aldehídos.</p><br/><p>Los <b>ftalatos</b> inhalados tienen el mismo efecto disruptor que los ingeridos o absorbidos por piel. Los <b>musks sintéticos</b> (galaxolide, tonalide) se acumulan en tejido graso y han sido detectados en sangre y leche materna.</p><br/><p>Alternativas:<ul><li><b>Ventilar</b> — la solución más efectiva y gratuita</li><li><b>Velas de cera de abeja</b> — emiten iones negativos, sin compuestos tóxicos</li><li><b>Difusor con aceites esenciales puros</b> — asegúrate de que sean 100% naturales, sin fragancia sintética añadida</li></ul></p>",
             "chemicals": ["ftalatos", "musks sintéticos"],
-            "tag": "problem"
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Emisiones de compuestos volátiles en ambientadores comerciales",
+                "url": "https://doi.org/10.1016/j.atmosenv.2010.10.060"
+              }
+            ]
           },
           {
             "label": "Evita los productos de limpieza antibacterianos",
-            "desc": "Al igual que los jabones antibacterianos, muchos sprays y toallitas de limpieza contienen triclosán o biocidas similares. Limpiar con vinagre blanco diluido, jabón de Castilla o agua y jabón común es igualmente eficaz para las superficies del día a día.",
+            "short": "Los sprays y toallitas antibacterianas suelen contener triclosán o equivalentes. Para superficies del hogar, el vinagre diluido o el jabón de castilla son igual de efectivos sin el coste hormonal.",
+            "long": "<p>Al igual que con los jabones antibacterianos, la promesa de 'mata el 99,9% de las bacterias' en productos de limpieza domésticos tiene un coste que no aparece en el envase.</p><br/><p>El <b>triclosán</b> y sus equivalentes (triclocarbán, cloroxilenol) en productos de limpieza:<ul><li>Generan <b>resistencias bacterianas</b> con el uso crónico</li><li>Se volatilizan y <b>se inhalan</b> durante el uso</li><li>Persisten en superficies y <b>se absorben por contacto dérmico</b></li><li>Se acumulan en el entorno — se detectan en <a href='https://doi.org/10.1021/es034611q' target='_blank'>sedimentos de ríos y agua potable</a></li></ul></p><br/><p>Para el hogar, alternativas completamente efectivas:<ul><li><b>Vinagre blanco diluido</b> (1:1 con agua) — antibacteriano natural para superficies no porosas</li><li><b>Jabón de castilla diluido</b> — limpieza general, seguro en todas las superficies</li><li><b>Bicarbonato</b> — abrasivo suave para cocina y baño</li><li><b>Agua oxigenada al 3%</b> — desinfectante eficaz sin residuos tóxicos</li></ul></p>",
             "chemicals": ["triclosán"],
-            "tag": "problem"
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Triclosán en sedimentos acuáticos y agua potable",
+                "url": "https://doi.org/10.1021/es034611q"
+              }
+            ]
           }
         ]
       },
@@ -111,15 +367,33 @@
         "items": [
           {
             "label": "Evita manipular tickets y recibos térmicos",
-            "desc": "Los tickets de caja, recibos de cajero y tickets de aparcamiento están impresos en papel térmico recubierto de BPA libre, no BPA ligado como en los plásticos, lo que significa que se absorbe a través de la piel en cuestión de segundos. La tasa de absorción se duplica si tienes las manos húmedas o has usado gel desinfectante recientemente. Rechaza los recibos cuando sea posible o manéjalos lo mínimo.",
+            "short": "Los tickets de caja están recubiertos de BPA libre que se absorbe en segundos a través de la piel. La absorción se duplica con manos húmedas o con gel desinfectante. Declina el recibo cuando puedas.",
+            "long": "<p>El papel térmico usado en tickets de caja, cajeros automáticos y parquímetros está recubierto con <b>BPA en forma libre</b> (no polimerizado), lo que lo hace extraordinariamente absorbible por la piel.</p><br/><p>Un <a href='https://doi.org/10.1371/journal.pone.0048108' target='_blank'>estudio de 2012</a> demostró que sostener un ticket térmico durante <b>5 segundos</b> transfiere cantidades medibles de BPA a los dedos. Con <b>manos húmedas o con gel hidroalcohólico</b> la absorción aumenta hasta <b>10 veces</b>.</p><br/><p>Los cajeros y trabajadores de supermercado que manejan tickets a diario tienen <a href='https://doi.org/10.1289/ehp.1206593' target='_blank'>niveles urinarios de BPA significativamente más altos</a> que la población general.</p><br/><p>Acciones prácticas:<ul><li>Pide <b>recibo digital o declínalo</b> siempre que sea posible</li><li>Si debes cogerlo, <b>mínimo contacto</b> y lávate las manos después</li><li>Nunca manejes recibos con <b>manos húmedas o con gel</b> recién aplicado</li></ul></p>",
             "chemicals": ["BPA"],
-            "tag": "problem"
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Absorción cutánea de BPA desde papel térmico",
+                "url": "https://doi.org/10.1371/journal.pone.0048108"
+              },
+              {
+                "label": "Niveles de BPA en cajeros y trabajadores de supermercado",
+                "url": "https://doi.org/10.1289/ehp.1206593"
+              }
+            ]
           },
           {
             "label": "Evita la ropa interior de poliéster",
-            "desc": "El poliéster es un tejido sintético derivado del petróleo. El calor y la fricción del contacto corporal hacen que libere ftalatos directamente sobre la piel en la zona escrotal, una de las zonas de mayor absorción del cuerpo y la más sensible a la temperatura y la alteración química para la producción de testosterona y la calidad del esperma. Elige algodón, bambú o lana.",
+            "short": "El poliéster libera ftalatos por calor y fricción directamente sobre la zona escrotal, una de las más sensibles para la producción de testosterona. Usa algodón, bambú o lana.",
+            "long": "<p>El poliéster es un plástico textil derivado del petróleo. Como todos los plásticos, contiene plastificantes — principalmente <b>ftalatos</b> — que se liberan con el calor corporal y la fricción.</p><br/><p>La zona escrotal es especialmente vulnerable por tres razones:<ol><li><b>Alta permeabilidad cutánea</b> — la piel escrotal es fina y absorbe bien</li><li><b>Temperatura elevada</b> — el calor del cuerpo acelera la liberación de ftalatos</li><li><b>Sensibilidad funcional</b> — los testículos son los principales productores de testosterona y esperma, directamente afectados por disruptores androgénicos</li></ol></p><br/><p><a href='https://doi.org/10.1016/j.reprotox.2014.09.003' target='_blank'>Estudios en hombres</a> asocian la exposición a ftalatos con <b>menor concentración espermática, mayor fragmentación del ADN espermático y niveles reducidos de testosterona libre</b>.</p><br/><p>Alternativas:<ul><li><b>Algodón orgánico</b> — transpirable, sin plastificantes</li><li><b>Bambú</b> — suave, antibacteriano natural, termorregulador</li><li><b>Lana merina</b> — excelente termorregulación aunque menos común en ropa interior</li></ul></p>",
             "chemicals": ["ftalatos"],
-            "tag": "problem"
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Ftalatos, esperma y testosterona en hombres",
+                "url": "https://doi.org/10.1016/j.reprotox.2014.09.003"
+              }
+            ]
           }
         ]
       }
@@ -138,15 +412,37 @@
         "items": [
           {
             "label": "Bloquea la luz azul después del atardecer",
-            "desc": "Las longitudes de onda de luz azul (400–490 nm) suprimen la producción de melatonina al indicarle al cerebro que aún es de día. Las pantallas (móviles, portátiles, televisores) emiten luz azul intensa. Usar gafas de lentes ámbar o rojas después del atardecer bloquea el espectro relevante y permite que la melatonina suba de forma natural. Como alternativa, activa el modo nocturno completo en los dispositivos y atenúa todas las luces.",
-            "item": "Gafas de lentes rojas o ámbar",
-            "tag": "solution"
+            "short": "Las pantallas emiten luz azul que suprime la melatonina y retrasa el sueño. Gafas de lentes rojas o ámbar después del atardecer bloquean el espectro problemático y permiten que la melatonina suba con normalidad.",
+            "long": "<p>La <b>melatonina</b> es la hormona que regula el ciclo sueño-vigilia. Su producción en la glándula pineal es inhibida por la luz, especialmente las longitudes de onda <b>azul (400–490 nm)</b> — exactamente el espectro que emiten las pantallas LED.</p><br/><p><a href='https://doi.org/10.1073/pnas.1418490112' target='_blank'>Un estudio de Harvard</a> demostró que leer en un iPad antes de dormir comparado con un libro físico:<ul><li>Retrasaba la <b>secreción de melatonina en 1,5 horas</b></li><li>Reducía la <b>somnolencia subjetiva</b></li><li>Alteraba el <b>ritmo circadiano</b> al día siguiente</li><li>Reducía el <b>estado de alerta matutino</b></li></ul></p><br/><p>Las gafas con lentes <b>ámbar o rojas</b> filtran el espectro azul-verde (hasta 550 nm en las rojas) con una efectividad del 95–99%. <a href='https://doi.org/10.1177/0748730415604692' target='_blank'>Estudios clínicos</a> muestran mejoras significativas en calidad de sueño y estado de ánimo con su uso nocturno durante 2 semanas.</p><br/><p>Otras medidas complementarias:<ul><li>Modo nocturno en todos los dispositivos (reduce pero no elimina el problema)</li><li>Bombillas de filamento o velas por la noche</li><li>Oscuridad total en el dormitorio — incluso pequeñas fuentes de luz afectan la calidad del sueño</li></ul></p>",
+            "item": "Gafas de lentes rojas o ámbar — marcas: Swanwick, BLUblox, Ra Optics",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Luz de iPad vs libro — melatonina y ritmo circadiano (Harvard)",
+                "url": "https://doi.org/10.1073/pnas.1418490112"
+              },
+              {
+                "label": "Gafas bloqueadoras de luz azul y calidad de sueño",
+                "url": "https://doi.org/10.1177/0748730415604692"
+              }
+            ]
           },
           {
-            "label": "Suplemento de magnesio",
-            "desc": "El magnesio interviene en más de 300 reacciones enzimáticas y tiene un papel directo en la regulación de la transición del sistema nervioso hacia el descanso. La mayoría de las personas tienen déficit por el agotamiento de los suelos. La forma glicinato es la mejor para el sueño y la ansiedad: está quelada con glicina, un aminoácido inhibidor que por sí mismo favorece el sueño. El treonato es la única forma que atraviesa la barrera hematoencefálica y resulta más beneficiosa a nivel cognitivo y neurológico.",
-            "item": "Glicinato de magnesio (sueño) o Treonato de magnesio (cerebro)",
-            "tag": "solution"
+            "label": "Suplemento de magnesio para el sueño",
+            "short": "El magnesio regula el sistema nervioso y facilita la transición al sueño. La mayoría de las personas tienen déficit. El glicinato es la mejor forma para el sueño; el treonato es la única que atraviesa la barrera hematoencefálica.",
+            "long": "<p>El magnesio es cofactor de <b>más de 300 reacciones enzimáticas</b> y tiene un papel directo en la regulación del sistema nervioso autónomo. Activa el sistema <b>GABA</b> (el principal neurotransmisor inhibidor) y regula el eje HPA (hipotálamo-hipófisis-adrenal), reduciendo el cortisol nocturno.</p><br/><p>El déficit de magnesio es muy prevalente: <a href='https://doi.org/10.1016/j.numecd.2012.12.014' target='_blank'>estudios estiman que entre el 45–68% de la población occidental</a> no alcanza la ingesta diaria recomendada, principalmente por el agotamiento de los suelos agrícolas y el procesado de los alimentos.</p><br/><p>Formas y usos:<ul><li><b>Glicinato de magnesio</b>: quelado con glicina, un aminoácido inhibidor que por sí mismo favorece el sueño. Mejor absorción, mínimos efectos laxantes. <b>Ideal para sueño y ansiedad</b></li><li><b>Treonato de magnesio (MgT)</b>: la única forma que <a href='https://doi.org/10.1016/j.neuron.2010.09.005' target='_blank'>atraviesa eficientemente la barrera hematoencefálica</a>. Estudios muestran mejoras en plasticidad sináptica, memoria y función cognitiva. <b>Ideal para cerebro y cognición</b></li><li><b>Óxido de magnesio</b>: la forma más barata y común en suplementos genéricos, pero con absorción muy baja (~4%). Evitar.</li></ul></p><br/><p>Dosis habitual: <b>200–400 mg de magnesio elemental</b> 30–60 minutos antes de dormir.</p>",
+            "item": "Glicinato de magnesio (sueño) o Treonato de magnesio (cerebro) — evita el óxido de magnesio",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Prevalencia del déficit de magnesio en población occidental",
+                "url": "https://doi.org/10.1016/j.numecd.2012.12.014"
+              },
+              {
+                "label": "Treonato de magnesio y barrera hematoencefálica",
+                "url": "https://doi.org/10.1016/j.neuron.2010.09.005"
+              }
+            ]
           }
         ]
       }
@@ -165,8 +461,44 @@
         "items": [
           {
             "label": "Elimina el scroll sin propósito",
-            "desc": "El contenido de scroll infinito en formato corto (Reels, TikTok, Shorts) es el formato más destructivo para la atención jamás diseñado. Entrena al cerebro a esperar ciclos de recompensa ultrarrápidos, haciendo que mantener la concentración en cualquier cosa más lenta (leer, conversar, trabajar, estar en la naturaleza) resulte físicamente incómodo. Los estudios muestran reducciones medibles en la capacidad de atención y la memoria de trabajo con su uso regular. La solución no es la moderación sino la eliminación: borra las apps, usa el modo en escala de grises o instala bloqueos de tiempo de pantalla.",
-            "tag": "problem"
+            "short": "El scroll infinito de Reels, TikTok y Shorts es el formato más destructivo para la atención jamás diseñado. Estudios muestran reducciones medibles en capacidad de atención y memoria de trabajo. La solución no es moderación sino eliminación.",
+            "long": "<p>Las plataformas de vídeo corto están diseñadas con los mismos principios de refuerzo variable que las <b>máquinas tragaperras</b>: el siguiente vídeo puede ser extraordinario o aburrido — esa incertidumbre es precisamente lo que mantiene el comportamiento. Este mecanismo fue documentado por <a href='https://doi.org/10.1016/j.chb.2016.02.045' target='_blank'>investigadores de la Universidad de Michigan</a> como uno de los principales impulsores del uso compulsivo de redes sociales.</p><br/><p>Efectos documentados del uso intensivo de contenido de formato corto:<ul><li><b>Reducción del umbral de atención</b>: el cerebro se habitúa a cambios de estímulo cada 5–15 segundos, haciendo que la concentración sostenida resulte físicamente incómoda</li><li><b>Deterioro de la memoria de trabajo</b>: <a href='https://doi.org/10.1371/journal.pone.0193709' target='_blank'>estudios de 2018</a> muestran correlación entre uso intensivo de redes sociales y peor rendimiento en tareas de memoria de trabajo</li><li><b>Aumento de ansiedad y FOMO</b> (fear of missing out): los bucles de validación social (likes, comentarios) activan el mismo circuito dopaminérgico que otras conductas adictivas</li><li><b>Fragmentación del sueño</b>: el uso nocturno no solo retrasa la melatonina sino que mantiene el sistema nervioso en estado de alerta</li></ul></p><br/><p>Por qué la moderación no funciona:<br/>Las interfaces están diseñadas específicamente para <b>superar la intención consciente</b>. El scroll infinito elimina el punto de parada natural. Las notificaciones crean urgencia artificial. El modo oscuro reduce la fatiga visual para prolongar el uso. Intentar usar estas apps 'con moderación' es como intentar comer 'con moderación' en un buffet diseñado por neurocientíficos del comportamiento.</p><br/><p>Medidas arquitectónicas efectivas:<ul><li><b>Desinstalar las apps</b> del móvil — el acceso por navegador añade suficiente fricción</li><li><b>Modo escala de grises</b> en el móvil — reduce el atractivo visual sin perder funcionalidad</li><li><b>Bloqueos de tiempo de pantalla con contraseña de terceros</b> — que alguien de confianza ponga el código</li><li><b>Teléfono fuera del dormitorio</b> — elimina el uso nocturno y matutino compulsivo</li></ul></p>",
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Refuerzo variable y uso compulsivo de redes sociales",
+                "url": "https://doi.org/10.1016/j.chb.2016.02.045"
+              },
+              {
+                "label": "Uso de redes sociales y memoria de trabajo",
+                "url": "https://doi.org/10.1371/journal.pone.0193709"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Conexión con la gente",
+        "items": [
+          {
+            "label": "La soledad moderna es una anomalía evolutiva",
+            "short": "Los humanos evolucionaron en grupos de 50–150 personas con contacto físico constante. La soledad crónica no es solo tristeza — activa las mismas vías cerebrales que el dolor físico y eleva el cortisol de forma sostenida. Las paredes han destruido la mayor parte de esa red.",
+            "long": "<p>Durante el 99% de la historia humana, estar solo era sinónimo de <b>sentencia de muerte</b>. Un individuo separado de su grupo no podía cazar, defenderse ni sobrevivir al invierno. El cerebro evolucionó para percibir el aislamiento social como una <b>amenaza de supervivencia</b> — no como una preferencia personal.</p><br/><p><a href='https://doi.org/10.1073/pnas.1601181113' target='_blank'>Investigaciones de la Universidad de Chicago</a> demostraron que la soledad crónica activa las mismas regiones cerebrales que el <b>dolor físico</b>, eleva el cortisol de forma sostenida y mantiene el sistema nervioso en un estado de <b>hipervigilancia defensiva</b> permanente — literalmente como vivir con una amenaza invisible constante.</p><br/><p>El modelo de crianza moderno es igualmente anómalo:<ul><li>Los recién nacidos humanos evolucionaron para ser criados por <b>toda una comunidad</b>, no por una pareja aislada (y mucho menos por una madre sola)</li><li>En grupos ancestrales, los bebés eran <a href='https://doi.org/10.1017/S0140525X00069909' target='_blank'>transportados en brazos durante el 80–90% del tiempo</a> de vigilia por diferentes miembros del grupo — nunca en el suelo mientras la madre descansaba</li><li>El contacto físico continuo regula el <b>cortisol, el ritmo cardíaco y el sistema inmune</b> del bebé. Su ausencia activa respuestas de estrés fisiológico medibles desde los primeros días de vida</li></ul></p><br/><p>Lo que las paredes han roto:<br/>El apartamento individual es la unidad habitacional más solitaria que ha existido en la historia de la especie. La familia nuclear — dos adultos, hijos, puerta cerrada — es un experimento social de apenas <b>70–80 años</b> en su forma actual. Antes: casas multigeneracionales, vecindarios con puertas abiertas, trabajo comunal, crianza compartida.</p><br/><p>Esto no es nostalgia — es biología. El sistema nervioso no ha tenido tiempo de adaptarse. Las consecuencias son medibles:<ul><li><a href='https://doi.org/10.1371/journal.pmed.1000316' target='_blank'>Un metaanálisis de 148 estudios</a> concluyó que las relaciones sociales débiles aumentan el riesgo de mortalidad prematura en un <b>50%</b> — comparable al tabaquismo</li><li>La soledad crónica se asocia con mayor riesgo de <b>depresión, demencia, enfermedad cardiovascular e inmunosupresión</b></li></ul></p><br/><p>No hay suplemento para esto. La solución es arquitectónica y social: <b>vivir cerca de gente que te importa, con puertas que se abren.</b></p>",
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "Soledad, dolor físico y hipervigilancia — Universidad de Chicago",
+                "url": "https://doi.org/10.1073/pnas.1601181113"
+              },
+              {
+                "label": "Transporte en brazos en sociedades ancestrales",
+                "url": "https://doi.org/10.1017/S0140525X00069909"
+              },
+              {
+                "label": "Relaciones sociales y mortalidad prematura — metaanálisis de 148 estudios",
+                "url": "https://doi.org/10.1371/journal.pmed.1000316"
+              }
+            ]
           }
         ]
       }
@@ -178,21 +510,47 @@
     "label": "AUMENTO DE TESTOSTERONA",
     "tagline": "Factores naturales que impulsan la producción de andrógenos",
     "color": "#a34f3a",
-    "summary": "La testosterona no es solo una 'hormona de gimnasio': regula la energía, la motivación, la libido, la densidad ósea, la retención muscular, la estabilidad del estado de ánimo y la agudeza cognitiva. Alcanza su pico a mediados de los 20 y disminuye aproximadamente un 1% al año a partir de los 30, pero los factores del estilo de vida pueden acelerar o frenar drásticamente ese descenso.",
+    "summary": "La testosterona no es solo una hormona de gimnasio: regula la energía, la motivación, la libido, la densidad ósea, la retención muscular, la estabilidad del estado de ánimo y la agudeza cognitiva. Alcanza su pico a mediados de los 20 y disminuye aproximadamente un 1% al año a partir de los 30, pero los factores del estilo de vida pueden acelerar o frenar drásticamente ese descenso.",
     "sections": [
       {
         "title": "Alimentación y suplementación",
         "items": [
           {
             "label": "Come grasas saludables",
-            "desc": "La testosterona es una hormona esteroide sintetizada a partir del colesterol. La grasa dietética, en particular la saturada y la monoinsaturada, es la materia prima. Las dietas bajas en grasas se asocian sistemáticamente con niveles más bajos de testosterona en estudios clínicos. Mejores fuentes: huevos enteros, carne roja, mantequilla, ghee, aceite de oliva, aguacate, frutos secos y pescado azul.",
-            "tag": "solution"
+            "short": "La testosterona se sintetiza a partir del colesterol. Las dietas bajas en grasa se asocian consistentemente con niveles más bajos de testosterona. Las mejores fuentes son huevos enteros, carne roja, mantequilla, aceite de oliva y aguacate.",
+            "long": "<p>La testosterona es una <b>hormona esteroide</b> — su molécula precursora es el <b>colesterol</b>. Sin suficiente grasa dietética, la cadena de síntesis hormonal (colesterol → pregnenolona → DHEA → testosterona) queda limitada por la materia prima.</p><br/><p><a href='https://doi.org/10.1093/ajcn/64.6.954' target='_blank'>Un estudio clínico</a> demostró que hombres que redujeron la ingesta de grasa del 40% al 25% de las calorías totales experimentaron una <b>reducción significativa de testosterona libre y total</b> en pocas semanas. El efecto fue reversible al restaurar la ingesta.</p><br/><p>Grasas más beneficiosas para la testosterona:<ul><li><b>Grasas saturadas</b>: presentes en yema de huevo, carne roja, mantequilla y ghee. Son la materia prima más directa para la síntesis esteroide</li><li><b>Grasas monoinsaturadas</b>: aceite de oliva virgen extra, aguacate, frutos secos. Asociadas con niveles más altos de testosterona en estudios epidemiológicos</li><li><b>Omega-3</b>: sardinas, caballa, anchoas, nueces. Reducen la inflamación sistémica que inhibe la producción de testosterona</li></ul></p><br/><p>Grasas a limitar:<ul><li><b>Aceites de semillas</b> (girasol, soja, maíz, colza): alto contenido en omega-6 que desplaza al omega-3 y promueve inflamación crónica. Ver sección de Disruptores Endocrinos.</li></ul></p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Reducción de grasa dietética y testosterona en hombres",
+                "url": "https://doi.org/10.1093/ajcn/64.6.954"
+              }
+            ]
           },
           {
             "label": "Zinc, magnesio y Tongkat Ali",
-            "desc": "El zinc es un cofactor directo en la síntesis de testosterona: su déficit reduce la T de forma fiable. El magnesio mejora la testosterona libre al reducir la unión con la SHBG. El Tongkat Ali (Eurycoma longifolia) es una raíz del sudeste asiático con varios ensayos clínicos que demuestran aumentos significativos en la testosterona libre, la LH y la calidad del esperma. Actúa principalmente reduciendo el cortisol y aumentando la señalización de la hormona luteinizante.",
-            "item": "Zinc + Magnesio + Tongkat Ali — busca una fórmula combinada o añádelos individualmente",
-            "tag": "solution"
+            "short": "El zinc es cofactor directo en la síntesis de testosterona. El magnesio mejora la testosterona libre reduciendo la SHBG. El Tongkat Ali tiene múltiples ensayos clínicos mostrando aumentos significativos en testosterona libre y calidad espermática.",
+            "long": "<p>Tres de los suplementos con mayor evidencia para la testosterona masculina natural:</p><br/><p><b>Zinc</b><br/>Cofactor enzimático directo en la síntesis de testosterona. La deficiencia de zinc <a href='https://doi.org/10.1093/ajcn/68.2.442S' target='_blank'>reduce la testosterona de forma consistente</a> incluso en hombres jóvenes sanos. La suplementación en hombres deficientes la restaura en pocas semanas. Fuentes dietéticas: ostras (la fuente más rica), carne roja, semillas de calabaza.</p><br/><p><b>Magnesio</b><br/>Además de sus efectos sobre el sueño ya descritos, el magnesio <a href='https://doi.org/10.1007/s12020-010-9447-4' target='_blank'>aumenta la testosterona libre</a> reduciendo la unión con la SHBG (globulina transportadora de hormonas sexuales). La testosterona unida a SHBG es inactiva — la libre es la que actúa en los tejidos.</p><br/><p><b>Tongkat Ali</b> (<i>Eurycoma longifolia</i>)<br/>Raíz originaria del Sudeste Asiático con uso tradicional milenario. Mecanismo principal: <b>reduce el cortisol</b> (que inhibe directamente la producción de testosterona) y <b>aumenta la LH</b> (hormona luteinizante, la señal que ordena a los testículos producir testosterona).<br/><a href='https://doi.org/10.1089/jmf.2012.0291' target='_blank'>Un ensayo clínico de 2013</a> con hombres con niveles bajos de testosterona mostró que 200 mg/día durante 1 mes <b>normalizó la testosterona en el 90% de los participantes</b>. Otro <a href='https://doi.org/10.1186/1550-2783-10-28' target='_blank'>estudio en hombres sanos</a> mostró mejoras en fuerza, masa muscular y marcadores de estrés.</p><br/><p>Dosis habituales: Zinc 25–45 mg/día, Magnesio 300–400 mg/día, Tongkat Ali 200–400 mg/día de extracto estandarizado.</p>",
+            "item": "Zinc + Magnesio + Tongkat Ali — busca una fórmula combinada o añádelos individualmente. Asegúrate de que el Tongkat Ali sea extracto estandarizado (mínimo 2% euricomanoside)",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Deficiencia de zinc y testosterona en hombres jóvenes",
+                "url": "https://doi.org/10.1093/ajcn/68.2.442S"
+              },
+              {
+                "label": "Magnesio, SHBG y testosterona libre",
+                "url": "https://doi.org/10.1007/s12020-010-9447-4"
+              },
+              {
+                "label": "Tongkat Ali y normalización de testosterona — ensayo clínico 2013",
+                "url": "https://doi.org/10.1089/jmf.2012.0291"
+              },
+              {
+                "label": "Tongkat Ali en hombres sanos — fuerza y estrés",
+                "url": "https://doi.org/10.1186/1550-2783-10-28"
+              }
+            ]
           }
         ]
       },
@@ -201,8 +559,19 @@
         "items": [
           {
             "label": "Entrenamiento de fuerza",
-            "desc": "El ejercicio de resistencia, en particular los movimientos compuestos y pesados como sentadillas, peso muerto y press, desencadena un pico agudo de testosterona durante y después de la sesión, y a lo largo del tiempo aumenta la densidad de receptores androgénicos de base. La carga mecánica señala al cuerpo que se necesita masa muscular y producción hormonal. Incluso 3 sesiones semanales de 45 minutos producen un beneficio hormonal medible.",
-            "tag": "solution"
+            "short": "Los ejercicios compuestos pesados (sentadilla, peso muerto, press) generan un pico agudo de testosterona y con el tiempo aumentan la densidad de receptores androgénicos. 3 sesiones semanales de 45 minutos son suficientes para un beneficio hormonal medible.",
+            "long": "<p>El ejercicio de resistencia con cargas provoca dos efectos hormonales distintos:<ol><li><b>Pico agudo</b>: durante y hasta 30 minutos después del entreno, los niveles de testosterona y hormona de crecimiento aumentan significativamente. <a href='https://doi.org/10.1007/BF00582175' target='_blank'>Estudios clásicos</a> muestran aumentos del 20–25% en testosterona sérica tras ejercicio de alta intensidad</li><li><b>Adaptación crónica</b>: el entrenamiento regular aumenta la densidad de <b>receptores androgénicos</b> en el músculo, haciendo que la testosterona disponible sea más efectiva aunque los niveles basales no cambien dramáticamente</li></ol></p><br/><p>Los movimientos más efectivos son los <b>compuestos multiarticulares</b> que reclutan grandes grupos musculares:<ul><li><b>Sentadilla</b> — el mayor estímulo hormonal documentado</li><li><b>Peso muerto</b> — recluta prácticamente todo el cuerpo posterior</li><li><b>Press de banca y press militar</b> — tren superior</li><li><b>Dominadas y remo</b> — espalda y bíceps</li></ul></p><br/><p>Parámetros óptimos para respuesta hormonal: <b>3–5 series de 4–8 repeticiones al 75–85% del máximo</b>, con descansos de 2–3 minutos. El volumen excesivo o el cardio crónico pueden elevar el cortisol y contrarrestar el efecto.</p><br/><p><a href='https://doi.org/10.1519/JSC.0b013e31816d5c6f' target='_blank'>Una revisión de 2008</a> confirmó que incluso en hombres mayores, el entrenamiento de fuerza produce aumentos significativos y sostenidos de testosterona libre.</p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Testosterona sérica y ejercicio de alta intensidad",
+                "url": "https://doi.org/10.1007/BF00582175"
+              },
+              {
+                "label": "Entrenamiento de fuerza y testosterona en hombres mayores",
+                "url": "https://doi.org/10.1519/JSC.0b013e31816d5c6f"
+              }
+            ]
           }
         ]
       },
@@ -211,8 +580,19 @@
         "items": [
           {
             "label": "Enfriamiento escrotal",
-            "desc": "Los testículos funcionan de forma óptima a 34-35°C, aproximadamente 2–3°C por debajo de la temperatura corporal central. Por eso son externos al cuerpo. El calor del portátil sobre el regazo, la ropa interior ajustada, los baños calientes o estar sentado durante horas eleva la temperatura escrotal y suprime de forma medible tanto la producción de esperma como la síntesis de testosterona. Usa ropa interior de algodón holgada, date duchas frías y evita la exposición prolongada al calor en esa zona.",
-            "tag": "solution"
+            "short": "Los testículos necesitan estar 2–3°C por debajo de la temperatura corporal para funcionar bien. El calor crónico del portátil, la ropa ajustada o los baños calientes suprime la producción de testosterona y esperma de forma medible.",
+            "long": "<p>Los testículos son externos al cuerpo por una razón funcional precisa: la <b>espermatogénesis y la síntesis de testosterona</b> requieren una temperatura de <b>34–35°C</b>, aproximadamente 2–3°C por debajo de la temperatura corporal central.</p><br/><p>Fuentes cotidianas de calor escrotal excesivo:<ul><li><b>Portátil sobre el regazo</b>: <a href='https://doi.org/10.1093/humrep/deh388' target='_blank'>estudios muestran</a> aumentos de temperatura escrotal de hasta <b>2,8°C</b> tras 1 hora de uso</li><li><b>Ropa interior ajustada</b>: los bóxer ajustados mantienen el escroto pegado al cuerpo, elevando su temperatura</li><li><b>Baños y duchas muy calientes frecuentes</b></li><li><b>Trabajo sedentario prolongado</b>: estar sentado varias horas eleva la temperatura perineal</li></ul></p><br/><p>Un <a href='https://doi.org/10.1093/humrep/den114' target='_blank'>estudio de 2008</a> en hombres con infertilidad idiopática mostró que simplemente <b>evitar el calor escrotal durante 3 meses mejoró significativamente la movilidad y concentración espermática</b> en el 61% de los participantes.</p><br/><p>Medidas prácticas:<ul><li>Usar <b>ropa interior holgada de algodón</b></li><li>Portátil sobre <b>mesa, nunca en el regazo</b></li><li>Duchas frías o finalizar con agua fría</li><li>Levantarse y caminar regularmente si el trabajo es sedentario</li></ul></p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Portátil en el regazo y temperatura escrotal",
+                "url": "https://doi.org/10.1093/humrep/deh388"
+              },
+              {
+                "label": "Evitar calor escrotal y mejora de parámetros espermáticos",
+                "url": "https://doi.org/10.1093/humrep/den114"
+              }
+            ]
           }
         ]
       }
@@ -224,15 +604,26 @@
     "label": "BASES CORPORALES",
     "tagline": "Los pilares innegociables que mantienen todo el sistema en marcha",
     "color": "#6e8a3a",
-    "summary": "Esto no son trucos ni optimizaciones, son requisitos biológicos que la vida moderna sedentaria e interior elimina sistemáticamente. Ningún suplemento reemplaza el movimiento diario, la luz solar y el contacto físico con la tierra.",
+    "summary": "Esto no son trucos ni optimizaciones — son requisitos biológicos que la vida moderna sedentaria e interior elimina sistemáticamente. Ningún suplemento reemplaza el movimiento diario, la luz solar y el contacto físico con el entorno.",
     "sections": [
       {
         "title": "Movimiento y estructura",
         "items": [
           {
             "label": "Muévete cada día",
-            "desc": "El hueso es tejido vivo que responde directamente a la carga mecánica, un proceso llamado Ley de Wolff. El estrés físico hace que los osteoblastos depositen nueva matriz ósea, haciendo los huesos más densos y resistentes. Estar sentado o tumbado durante mucho tiempo tiene el efecto contrario: sin señales de carga, los osteoclastos degradan el hueso más rápido de lo que se regenera. Los astronautas pierden hasta un 2% de densidad ósea al mes en gravedad cero. No necesitas ejercicio intenso: caminar, cargar peso y el movimiento con el propio peso corporal son suficientes para mantener la integridad ósea.",
-            "tag": "solution"
+            "short": "El hueso responde a la carga mecánica volviéndose más denso (Ley de Wolff). El sedentarismo prolongado lo degrada activamente. No necesitas ejercicio intenso — caminar, cargar y el movimiento con el propio peso son suficientes.",
+            "long": "<p>El hueso no es un material inerte — es tejido vivo que se remodela constantemente en respuesta a las fuerzas mecánicas que recibe. Este principio, conocido como <b>Ley de Wolff</b> (1892), establece que el hueso se deposita donde se necesita y se reabsorbe donde no.</p><br/><p>El mecanismo: la deformación mecánica del hueso activa los <b>osteocitos</b> (células sensoras embebidas en la matriz ósea), que señalizan a los <b>osteoblastos</b> para depositar nuevo tejido. Sin carga, los <b>osteoclastos</b> degradan el hueso más rápido de lo que se regenera.</p><br/><p>La evidencia más dramática viene de la astronáutica: <a href='https://doi.org/10.1007/BF02341234' target='_blank'>los astronautas pierden entre 1–2% de densidad ósea por mes</a> en microgravedad, principalmente en cadera y columna. En tierra, el sedentarismo prolongado produce el mismo efecto, solo que más lento.</p><br/><p>Lo que cuenta como estímulo óseo suficiente:<ul><li><b>Caminar</b> — especialmente en superficies irregulares o con algo de carga</li><li><b>Entrenamiento de fuerza</b> — el estímulo más potente documentado</li><li><b>Impacto</b> — correr, saltar, deportes de raqueta: la carga de impacto es especialmente osteogénica</li><li><b>Simplemente estar de pie</b> — frente a estar sentado o tumbado</li></ul></p><br/><p><a href='https://doi.org/10.1001/archinte.163.18.2217' target='_blank'>Un estudio de 2003</a> en mujeres posmenopáusicas demostró que caminar 4 horas semanales reducía el riesgo de fractura de cadera un <b>41%</b> — sin ningún otro ejercicio.</p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Pérdida ósea en astronautas — microgravedad",
+                "url": "https://doi.org/10.1007/BF02341234"
+              },
+              {
+                "label": "Caminar y reducción de fractura de cadera",
+                "url": "https://doi.org/10.1001/archinte.163.18.2217"
+              }
+            ]
           }
         ]
       },
@@ -240,9 +631,20 @@
         "title": "Luz solar",
         "items": [
           {
-            "label": "Toma el sol cada día",
-            "desc": "La exposición directa al sol sobre la piel desnuda activa la síntesis de vitamina D, una hormona (no técnicamente una vitamina) que regula más de 1.000 genes, incluidos los que gobiernan la función inmune, el estado de ánimo, la producción de testosterona, la absorción de calcio y la inflamación. El déficit de vitamina D es casi universal en latitudes del norte y en personas que trabajan en interiores. 20–30 minutos de sol de mediodía en brazos y torso son aproximadamente suficientes para la mayoría de los tipos de piel. El protector solar bloquea los UVB e impide la síntesis: toma primero tu dosis de sol base.",
-            "tag": "solution"
+            "label": "Toma el sol cada día — pero elige bien el horario",
+            "short": "La exposición solar activa la síntesis de vitamina D, esencial para testosterona, inmunidad y estado de ánimo. Lo ideal es antes de las 11h o después de las 16h. La piel se adapta con el tiempo — construye base gradualmente y usa solo protector mineral para exposición prolongada al mediodía.",
+            "long": "<p>La <b>vitamina D</b> es técnicamente una hormona, no una vitamina: se sintetiza en la piel por acción de la radiación <b>UVB (290–315 nm)</b> sobre el 7-dehidrocolesterol y regula la expresión de <b>más de 1.000 genes</b>.</p><br/><p>Su déficit es prácticamente universal en personas que trabajan en interiores: <a href='https://doi.org/10.1210/jc.2011-2600' target='_blank'>estudios estiman que entre el 40–80% de la población mundial</a> tiene niveles insuficientes de vitamina D (&lt;30 ng/mL).</p><br/><p>Efectos del déficit documentados:<ul><li><b>Testosterona reducida</b>: los receptores de vitamina D están presentes en las células de Leydig (productoras de testosterona). <a href='https://doi.org/10.1093/humrep/der112' target='_blank'>Estudios muestran correlación directa</a> entre vitamina D y testosterona</li><li><b>Inmunidad comprometida</b></li><li><b>Mayor riesgo de depresión y trastornos del estado de ánimo</b></li><li><b>Peor absorción de calcio</b> y mayor riesgo de osteoporosis</li></ul></p><br/><p>Sobre el horario:<ul><li><b>Antes de las 11h y después de las 16h</b>: el ángulo solar permite UVB suficiente para síntesis de vitamina D con un índice UV moderado. Menor riesgo de quemadura</li><li><b>11h–16h</b>: máxima intensidad UV. Útil para construir bronceado protector de forma progresiva, pero arriesgado sin base previa</li></ul></p><br/><p>La piel sí se adapta: la exposición moderada repetida estimula la producción de <b>melanina</b> y engrosa la epidermis, proporcionando una protección natural equivalente a <b>SPF 3–4</b>. Construye la base gradualmente — las quemaduras, no el bronceado, son el problema.</p><br/><p>Para exposición prolongada al mediodía: usa <b>protector solar mineral</b> (óxido de zinc o dióxido de titanio). Ver sección Disruptores Endocrinos para los filtros a evitar.</p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Prevalencia global del déficit de vitamina D",
+                "url": "https://doi.org/10.1210/jc.2011-2600"
+              },
+              {
+                "label": "Vitamina D y testosterona — correlación directa",
+                "url": "https://doi.org/10.1093/humrep/der112"
+              }
+            ]
           }
         ]
       },
@@ -251,8 +653,45 @@
         "items": [
           {
             "label": "Camina descalzo con regularidad",
-            "desc": "La práctica de caminar descalzo sobre superficies naturales (hierba, tierra, arena) se llama 'grounding' o 'earthing'. La hipótesis es que el contacto directo de la piel con la tierra permite la transferencia de electrones libres del suelo al cuerpo, lo que podría neutralizar el exceso de radicales libres (estrés oxidativo). Un cuerpo pequeño pero creciente de investigación revisada por pares muestra efectos sobre marcadores inflamatorios, el ritmo del cortisol y la calidad del sueño. La evidencia aún no es concluyente, pero el coste es cero y los inconvenientes son mínimos.",
-            "tag": "info"
+            "short": "El 'grounding' o earthing propone que el contacto directo con la tierra transfiere electrones libres que neutralizan radicales libres. La evidencia es preliminar pero real: estudios muestran efectos sobre inflamación, cortisol y calidad de sueño. El coste es cero.",
+            "long": "<p>El <b>earthing</b> o <b>grounding</b> es la práctica de mantener contacto directo de la piel con superficies naturales conductoras: tierra, hierba húmeda, arena, agua.</p><br/><p>La hipótesis: la superficie de la Tierra mantiene una <b>carga eléctrica negativa</b> constante, con un reservorio prácticamente infinito de electrones libres. El contacto directo con la piel permitiría la transferencia de estos electrones al organismo, donde actuarían como <b>antioxidantes</b> neutralizando radicales libres (especies reactivas de oxígeno asociadas con inflamación crónica).</p><br/><p>La evidencia disponible, aunque preliminar:<ul><li><a href='https://doi.org/10.1089/acm.2011.0820' target='_blank'>Un estudio de 2012</a> en el <i>Journal of Alternative and Complementary Medicine</i> mostró que dormir conectado a la tierra <b>normalizó el ritmo diurno de cortisol</b> y mejoró subjetivamente el sueño, el dolor y el estrés</li><li><a href='https://doi.org/10.1155/2012/291541' target='_blank'>Otro estudio</a> documentó <b>reducción de marcadores inflamatorios</b> y mejora del dolor crónico en personas que duermen sobre superficies conductoras</li><li>La conducción eléctrica del cuerpo humano y la carga de la Tierra están bien documentadas físicamente — el mecanismo propuesto es al menos plausible</li></ul></p><br/><p>Lo que sí es cierto con independencia del earthing:<ul><li>Caminar descalzo sobre superficies irregulares <b>activa musculatura intrínseca del pie</b> que el calzado moderno atrofia</li><li>El contacto con entornos naturales reduce el cortisol — documentado en la práctica japonesa del <b>shinrin-yoku</b> (baños de bosque)</li><li>Coste: <b>cero</b>. Contrapartida: mínima.</li></ul></p>",
+            "tag": "info",
+            "refs": [
+              {
+                "label": "Earthing, cortisol y calidad de sueño (2012)",
+                "url": "https://doi.org/10.1089/acm.2011.0820"
+              },
+              {
+                "label": "Earthing y reducción de marcadores inflamatorios",
+                "url": "https://doi.org/10.1155/2012/291541"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Salud dental",
+        "items": [
+          {
+            "label": "Dientes: cepillarse es un parche, no la solución",
+            "short": "Los humanos preagricolas tenían tasas de caries inferiores al 2% sin cepillarse. La causa de las caries modernas es la dieta, no la higiene. Elimina el azúcar refinado, reduce el picoteo y usa pasta sin SLS ni triclosán.",
+            "long": "<p>Los análisis de cráneos humanos preagricolas muestran tasas de caries <a href='https://doi.org/10.1038/ng.2536' target='_blank'>inferiores al 2%</a>. Con la introducción de la agricultura (cereales) escalaron al 10–15%. Con el azúcar industrial superaron el 30%. <b>El cepillado no existía — la dieta lo explicaba todo.</b></p><br/><p>El mecanismo: <b>Streptococcus mutans</b> y otras bacterias cariogénicas fermentan los <b>carbohidratos refinados y azúcares</b>, produciendo ácidos que disuelven el esmalte. Sin azúcar, sin fermentación, sin caries. El cepillado elimina parte de la biopelícula bacteriana, pero si la dieta la regenera continuamente, es una batalla perdida.</p><br/><p>Cambios dietéticos con mayor impacto:<ul><li><b>Eliminar azúcar refinado y harina blanca</b> — los sustratos principales de S. mutans</li><li><b>Reducir la frecuencia de ingesta</b> — cada vez que comes, el pH bucal baja durante 20–30 minutos. La saliva necesita ese tiempo para remineralizar. Picotear constantemente mantiene el pH bajo de forma crónica</li><li><b>Alimentos remineralizantes</b>: lácteos (calcio y fósforo), caldo de huesos, verduras de hoja verde. Mantienen la saliva <b>alcalina y saturada de minerales</b></li></ul></p><br/><p>Sobre la pasta de dientes:<ul><li>Evita el <b>SLS (lauril sulfato sódico)</b>: detergente agresivo que daña la mucosa oral y se ha asociado con mayor incidencia de <a href='https://doi.org/10.1111/j.1600-0714.1994.tb01553.x' target='_blank'>úlceras aftosas</a></li><li>Evita el <b>triclosán</b>: antibacteriano disruptor endocrino, ya descrito en la sección de Disruptores</li><li>El <b>flúor tópico</b> sigue siendo efectivo para endurecer el esmalte — el debate es sobre la ingesta sistémica (agua fluorada, suplementos), no el uso tópico puntual</li></ul></p><br/><p>Alternativa ancestral: el <b>miswak</b> (<i>Salvadora persica</i>) — palos de mascar usados en África y Oriente Medio durante milenios. Contienen <b>flúor natural, silica, taninos astringentes y compuestos antibacterianos</b>. <a href='https://doi.org/10.4103/0976-237X.91790' target='_blank'>Estudios comparativos</a> muestran eliminación de placa comparable al cepillo de dientes.</p>",
+            "item": "Pasta de dientes: busca fórmulas sin SLS ni triclosán — o prueba los palos de miswak",
+            "tag": "info",
+            "refs": [
+              {
+                "label": "Caries en poblaciones preagricolas — análisis genómico",
+                "url": "https://doi.org/10.1038/ng.2536"
+              },
+              {
+                "label": "SLS y úlceras aftosas recurrentes",
+                "url": "https://doi.org/10.1111/j.1600-0714.1994.tb01553.x"
+              },
+              {
+                "label": "Miswak vs cepillo de dientes — eliminación de placa",
+                "url": "https://doi.org/10.4103/0976-237X.91790"
+              }
+            ]
           }
         ]
       }
