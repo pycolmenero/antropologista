@@ -54,16 +54,164 @@ const t = (keyword: string) => {
   }
 }
 
+
+// ─── TABLE ───────────────────────────────────────────────────────────────────
+type TableRow = {
+  chemical: string
+  hormones: string
+  thyroid: string
+  metabolism: string
+  neuro: string
+  immune: string
+  cancer: string
+}
+
+type CategoryTable = {
+  headers: string[]
+  rows: TableRow[]
+}
+
+function DisruptorTable({ table }: { table: CategoryTable }) {
+  const keys: (keyof Omit<TableRow, 'chemical'>)[] = [
+    'hormones', 'thyroid', 'metabolism', 'neuro', 'immune', 'cancer'
+  ]
+
+  return (
+    <div
+      style={{
+        overflowX: 'auto',
+        marginBottom: 24,
+        border: '1px solid var(--border)',
+        borderRadius: 2,
+      }}
+    >
+      <div className="table-container">
+        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+
+          {/* Header */}
+          <thead>
+            <tr>
+              {table.headers.map((h, i) => (
+                <th
+                  key={i}
+                  style={{
+                    padding: '8px 12px',
+                    fontSize: 10,
+                    fontFamily: 'Space Mono',
+                    letterSpacing: '0.12em',
+                    textTransform: 'uppercase',
+                    color: 'var(--text-muted)',
+                    textAlign: i === 0 ? 'left' : 'center',
+                    borderBottom: '1px solid var(--border)',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+
+          {/* Rows */}
+          <tbody>
+            {table.rows.map((row, ri) => (
+              <tr
+                key={ri}
+                style={{
+                  borderBottom:
+                    ri < table.rows.length - 1
+                      ? '1px solid var(--border)'
+                      : 'none',
+                }}
+              >
+                <td
+                  style={{
+                    padding: '8px 12px',
+                    fontSize: 11,
+                    fontFamily: 'Space Mono',
+                    color: 'var(--text-primary)',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {row.chemical}
+                </td>
+                {keys.map((key) => (
+                  <td
+                    key={key}
+                    style={{
+                      padding: '8px 12px',
+                      fontSize: 14,
+                      textAlign: 'center',
+                      opacity: row[key] === '-' ? 0.2 : 1,
+                    }}
+                  >
+                    {row[key]}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+          
+
+        </table>
+      </div>
+
+      {/* Legend */}
+      <div
+        style={{
+          display: 'flex',
+          gap: 16,
+          padding: '8px 12px',
+          borderTop: '1px solid var(--border)',
+        }}
+      >
+        {[
+          { dot: '🔴', label: 'strong' },
+          { dot: '🟠', label: 'moderate' },
+          { dot: '🟡', label: 'mild' },
+          { dot: '-',  label: 'none documented' },
+        ].map(({ dot, label }) => (
+          <span
+            key={label}
+            style={{
+              fontSize: 10,
+              fontFamily: 'Space Mono',
+              color: 'var(--text-muted)',
+              letterSpacing: '0.06em',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 4,
+            }}
+          >
+            <span style={{ fontSize: dot === '-' ? 11 : 13 }}>{dot}</span>
+            {label}
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+
+
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 type Tag = 'problem' | 'solution' | 'info'
 
+type Ref = {
+  label: string
+  url: string
+}
+
 type Item = {
   label: string
-  desc?: string
+  short?: string
+  long?: string
+  desc?: string        // keep for backwards compat with old items
   tag?: Tag
   chemicals?: string[]
   item?: string
+  refs?: Ref[]
 }
 
 type Section = {
@@ -79,11 +227,11 @@ type Category = {
   tagline: string
   color: string
   summary: string
+  table: CategoryTable[]
   sections: Section[]
 }
 
 // ─── Icons ───────────────────────────────────────────────────────────────────
-
 function ChevronIcon({ open }: { open: boolean }) {
   return (
     <svg
@@ -110,107 +258,244 @@ function ChevronIcon({ open }: { open: boolean }) {
 }
 
 // ─── Item Row ─────────────────────────────────────────────────────────────────
-
 function ItemRow({ item }: { item: Item }) {
+  const [expanded, setExpanded] = useState(false)
+  const [refsOpen, setRefsOpen] = useState(false)
+
+  const hasRichContent = item.short || item.long
+
   return (
     <div className="item-row px-4 py-4">
-      <div className="flex items-start gap-3">
-        <div style={{ flex: 1 }}>
+      <div style={{ flex: 1 }}>
 
-          {/* Label + tag */}
-          <div
-            className="flex items-center gap-2 flex-wrap"
-            style={{ marginBottom: item.desc || item.chemicals || item.item ? 6 : 0 }}
+        {/* Label + tag */}
+        <div
+          className="flex items-center gap-2 flex-wrap"
+          style={{ marginBottom: 6 }}
+        >
+          <span
+            style={{
+              fontSize: 13,
+              fontFamily: 'Space Mono',
+              color: 'var(--text-primary)',
+              letterSpacing: '0.03em',
+            }}
           >
-            <span
-              style={{
-                fontSize: 13,
-                fontFamily: 'Space Mono',
-                color: 'var(--text-primary)',
-                letterSpacing: '0.03em',
-              }}
-            >
-              {item.label}
+            {item.label}
+          </span>
+          {/* {item.tag && (
+            <span className={`tag tag-${item.tag}`}>
+              {item.tag === 'problem'
+                ? 'problem'
+                : item.tag === 'solution'
+                  ? 'alternative'
+                  : 'context'}
             </span>
-            {item.tag && (
-              <span className={`tag tag-${item.tag}`}>
-                {item.tag === 'problem'
-                  ? 'problem'
-                  : item.tag === 'solution'
-                    ? 'alternative'
-                    : 'context'}
-              </span>
+          )} */}
+        </div>
+
+        {/* Rich content: short + expandable long */}
+        {hasRichContent && (
+          <div style={{ marginBottom: item.chemicals || item.item ? 8 : 0 }}>
+
+            {/* Short */}
+            {item.short && (
+              <p
+                style={{
+                  fontSize: 12,
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.7,
+                  fontFamily: 'Space Mono',
+                  margin: 0,
+                  marginBottom: item.long ? 8 : 0,
+                }}
+              >
+                {/* {item.short} */}
+                <div
+                    dangerouslySetInnerHTML={{ __html: item.short }}
+                    style={{
+                      fontSize: 12,
+                      color: 'var(--text-secondary)',
+                      lineHeight: 1.8,
+                      fontFamily: 'Space Mono',
+                    }}
+                    className="rich-content"
+                  />
+              </p>
             )}
-          </div>
 
-          {/* Description */}
-          {item.desc && (
-            <p
-              style={{
-                fontSize: 12,
-                color: 'var(--text-secondary)',
-                lineHeight: 1.7,
-                margin: 0,
-                marginBottom: item.chemicals || item.item ? 8 : 0,
-                fontFamily: 'Space Mono',
-              }}
-            >
-              {item.desc}
-            </p>
-          )}
-
-          {/* Chemicals */}
-          {item.chemicals && item.chemicals.length > 0 && (
-            <div
-              className="flex flex-wrap gap-1"
-              style={{ marginBottom: item.item ? 8 : 0 }}
-            >
-              {item.chemicals.map((chem) => (
-                <span
-                  key={chem}
+            {/* Read more toggle */}
+            {item.long && (
+              <>
+                <button
+                  onClick={() => setExpanded(v => !v)}
                   style={{
                     fontSize: 10,
                     fontFamily: 'Space Mono',
-                    letterSpacing: '0.08em',
+                    letterSpacing: '0.1em',
                     textTransform: 'uppercase',
                     color: 'var(--accent)',
-                    border: '1px solid var(--accent)',
-                    borderRadius: 2,
-                    padding: '2px 6px',
-                    opacity: 0.75,
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: 0,
+                    marginBottom: expanded ? 12 : 0,
+                    opacity: 0.8,
                   }}
                 >
-                  {chem}
-                </span>
-              ))}
-            </div>
-          )}
+                  {expanded ? '↑ collapse' : '↓ read more'}
+                </button>
 
-          {/* Item recommendation */}
-          {item.item && (
-            <div
+                {/* Long — dangerouslySetInnerHTML is safe here, content is author-controlled */}
+                {expanded && (
+                  <div
+                    dangerouslySetInnerHTML={{ __html: item.long }}
+                    style={{
+                      fontSize: 12,
+                      color: 'var(--text-secondary)',
+                      lineHeight: 1.8,
+                      fontFamily: 'Space Mono',
+                    }}
+                    className="rich-content"
+                  />
+                )}
+              </>
+            )}
+          </div>
+        )}
+
+        {/* Legacy desc fallback */}
+        {!hasRichContent && item.desc && (
+          <p
+            style={{
+              fontSize: 12,
+              color: 'var(--text-secondary)',
+              lineHeight: 1.7,
+              margin: 0,
+              marginBottom: item.chemicals || item.item ? 8 : 0,
+              fontFamily: 'Space Mono',
+            }}
+          >
+            {item.desc}
+          </p>
+        )}
+
+        {/* Chemicals */}
+        {item.chemicals && item.chemicals.length > 0 && (
+          <div
+            className="flex flex-wrap gap-1"
+            style={{ marginBottom: item.item ? 8 : 0 }}
+          >
+            {item.chemicals.map((chem) => (
+              <span
+                key={chem}
+                style={{
+                  fontSize: 10,
+                  fontFamily: 'Space Mono',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: 'var(--accent)',
+                  border: '1.5px solid var(--accent)',
+                  borderRadius: 2,
+                  padding: '2px 6px',
+                  opacity: 0.75,
+                }}
+              >
+                {chem}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {/* Item recommendation */}
+        {item.item && (
+          <div
+            style={{
+              fontSize: 11,
+              fontFamily: 'Space Mono',
+              color: 'var(--text-muted)',
+              letterSpacing: '0.05em',
+              borderLeft: '2px solid var(--accent)',
+              paddingLeft: 8,
+              marginBottom: item.refs ? 8 : 0,
+              opacity: 0.8,
+            }}
+          >
+            ↳ {item.item}
+          </div>
+        )}
+
+        {/* References */}
+        {item.refs && item.refs.length > 0 && (
+          <div style={{ marginTop: 8 }}>
+            <button
+              onClick={() => setRefsOpen(v => !v)}
               style={{
-                fontSize: 11,
+                fontSize: 10,
                 fontFamily: 'Space Mono',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
                 color: 'var(--text-muted)',
-                letterSpacing: '0.05em',
-                borderLeft: '2px solid var(--accent)',
-                paddingLeft: 8,
-                opacity: 0.8,
+                background: 'none',
+                border: '1px solid var(--border)',
+                borderRadius: 2,
+                cursor: 'pointer',
+                padding: '3px 8px',
+                opacity: 0.7,
               }}
             >
-              ↳ {item.item}
-            </div>
-          )}
+              {refsOpen ? '↑ references' : `↓ references (${item.refs.length})`}
+            </button>
 
-        </div>
+            {refsOpen && (
+              <div
+                style={{
+                  marginTop: 8,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 4,
+                }}
+              >
+                
+                
+
+{item.refs.map((ref, i) => (
+  <a
+    key={i}
+    href={ref.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      fontSize: 10,
+      fontFamily: 'Space Mono',
+      color: 'var(--accent)',
+      letterSpacing: '0.04em',
+      opacity: 0.8,
+      textDecoration: 'none',
+      borderBottom: '1px dotted var(--accent)',
+      paddingBottom: 1,
+      width: 'fit-content',
+    }}
+  >
+    [{i + 1}] {ref.label}
+  </a>
+))}
+
+
+
+
+
+              </div>
+            )}
+          </div>
+        )}
+
       </div>
     </div>
   )
 }
 
 // ─── Section ─────────────────────────────────────────────────────────────────
-
 function SectionBlock({
   section,
   index,
@@ -261,6 +546,7 @@ function SectionBlock({
       <div className={`expanded-panel ${open ? 'open' : ''}`}>
         <div className="expanded-inner">
           <div>
+            {(()=>{console.log(section.items); return ""})()}
             {section.items.map((item, ii) => (
               <ItemRow key={ii} item={item} />
             ))}
@@ -304,7 +590,6 @@ function SectionBlock({
 }
 
 // ─── Category Card ────────────────────────────────────────────────────────────
-
 function CategoryCard({ category, index }: { category: Category; index: number }) {
   const [open, setOpen] = useState(false)
   const [openSection, setOpenSection] = useState<number | null>(null)
@@ -370,7 +655,7 @@ function CategoryCard({ category, index }: { category: Category; index: number }
             <p
               className="font-display"
               style={{
-                fontSize: 'clamp(15px, 2vw, 18px)',
+                fontSize: 'clamp(10px, 1.5vw, 14px)',
                 color: 'var(--text-secondary)',
                 lineHeight: 1.75,
                 marginBottom: 24,
@@ -380,6 +665,9 @@ function CategoryCard({ category, index }: { category: Category; index: number }
             >
               {category.summary}
             </p>
+            
+              {category.table && <DisruptorTable table={category.table} />}
+            
 
             {/* Sections */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
@@ -484,7 +772,7 @@ function FieldNotes() {
               fontStyle: 'italic',
               fontWeight: 300,
             }}
-          >
+            >
             {t("title2")}
           </em>
         </h1>
@@ -505,7 +793,7 @@ function FieldNotes() {
           {t("desc")}
         </p>
 
-        <div
+        {/* <div
           className="stagger-in stagger-3 flex items-center gap-6 flex-wrap"
           style={{ marginTop: 24 }}
         >
@@ -531,13 +819,13 @@ function FieldNotes() {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
       </header>
 
       {/* Main content */}
       <main
         style={{
-          padding: '0 clamp(20px, 5vw, 60px) clamp(60px, 10vw, 120px)',
+          padding: '0 clamp(10px, 2vw, 40px) clamp(60px, 10vw, 120px)',
           maxWidth: 900,
           margin: '0 auto',
         }}
@@ -600,3 +888,4 @@ function FieldNotes() {
     </div>
   )
 }
+
