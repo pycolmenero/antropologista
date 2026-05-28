@@ -3,13 +3,14 @@ import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 
 // TRANSLATION
-
-const location = useLocation()
-const lang = location.pathname.startsWith('/es') ? 'es' : 'en'
-const categoriesData = (lang === 'es'
-  ? await import('../data/categories.es.json')
-  : await import('../data/categories.en.json')
-).default
+import categoriesEn from '../data/categories.en.json'
+import categoriesEs from '../data/categories.es.json'
+// const location = useLocation()
+// const lang = location.pathname.startsWith('/es') ? 'es' : 'en'
+// const categoriesData = (lang === 'es'
+//   ? await import('../data/categories.es.json')
+//   : await import('../data/categories.en.json')
+// ).default
 
 
 export const Route = createFileRoute('/')({
@@ -23,6 +24,12 @@ export const Route = createFileRoute('/')({
 // }
 
 const t = (keyword: string) => {
+
+  const location = useLocation()
+  const lang = location.pathname.startsWith('/es')
+    ? 'es'
+    : 'en'
+
   switch (keyword) {
     case "desc":
       switch (lang) {
@@ -694,10 +701,22 @@ function CategoryCard({ category, index }: { category: Category; index: number }
 }
 
 // ─── Root ─────────────────────────────────────────────────────────────────────
-
-const categories = categoriesData as Category[]
-
 export default function App() {
+
+  const location = useLocation()
+
+  const lang = location.pathname.startsWith('/es')
+    ? 'es'
+    : 'en'
+
+  const categoriesData =
+    lang === 'es'
+      ? categoriesEs
+      : categoriesEn
+
+  const categories = categoriesData as Category[];
+
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
       {categories.map((cat, i) => (
