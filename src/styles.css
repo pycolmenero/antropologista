@@ -96,12 +96,12 @@ body {
 .category-card:hover,
 .category-card.open {
   border-color: var(--border-hover);
-  background: var(--bg-card-hover);
+  /* background: var(--bg-card-hover); */
 }
 
-.category-card.open {
+/* .category-card.open {
   border-color: var(--border-accent);
-}
+} */
 
 /* Expanded panel */
 .expanded-panel {
