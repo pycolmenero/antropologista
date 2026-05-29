@@ -219,7 +219,7 @@
         ]
       },
       {
-        "title": "Higiene personal",
+        "title": "Higiene y cosméticos",
         "items": [
           {
             "label": "Usa desodorante natural",
@@ -291,6 +291,22 @@
               {
                 "label": "Oxibenzona en sangre tras aplicación tópica",
                 "url": "https://doi.org/10.1021/acs.chemrestox.9b00348"
+              }
+            ]
+          },
+          {
+            "label": "Cuidado con el maquillaje y cosméticos",
+            "short": "Muchos cosméticos contienen ftalatos, parabenos, PFAS y metales pesados que pueden absorberse parcialmente a través de la piel. La exposición es especialmente alta en personas que usan muchos productos diariamente.",
+            "long": "<p>La piel no es una barrera impermeable. Diversos compuestos presentes en cosméticos y productos de cuidado personal pueden absorberse parcialmente y entrar en circulación sistémica.</p><br/><p>Los más preocupantes incluyen:<ul><li><b>Parabenos</b> — conservantes con actividad estrogénica débil</li><li><b>Ftalatos</b> — usados en fragancias y fijadores, asociados a alteraciones hormonales</li><li><b>PFAS</b> — compuestos fluorados usados para resistencia al agua y larga duración</li><li><b>Metales pesados</b> — plomo, cadmio o arsénico detectados en algunos productos</li></ul></p><br/><p><a href='https://doi.org/10.1021/acs.estlett.1c00240' target='_blank'>Un análisis de 2021</a> detectó altos niveles de flúor — indicador de PFAS — en productos cosméticos resistentes al agua, especialmente bases, máscaras de pestañas y pintalabios.</p><br/><p>La exposición repetida es importante porque muchos de estos compuestos son <b>bioacumulativos</b> o actúan incluso a dosis bajas cuando la exposición es crónica.</p><br/><p>Medidas útiles:<ul><li>Reducir la cantidad total de productos usados diariamente</li><li>Evitar fragancias sintéticas innecesarias</li><li>Priorizar productos sin parabenos ni ftalatos</li><li>Evitar cosméticos “waterproof” de uso diario</li></ul></p>",
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "PFAS en cosméticos resistentes al agua",
+                "url": "https://doi.org/10.1021/acs.estlett.1c00240"
+              },
+              {
+                "label": "Parabenos, ftalatos y disruptores endocrinos en cosméticos",
+                "url": "https://doi.org/10.1289/ehp.1003220"
               }
             ]
           },
@@ -428,6 +444,18 @@
             ]
           },
           {
+            "label": "Mantén horarios consistentes de sueño",
+            "short": "Dormir y despertarse a horas distintas cada día desajusta el ritmo circadiano. La regularidad del horario es uno de los factores más importantes para la calidad del sueño.",
+            "long": "<p>El cuerpo humano funciona mediante ritmos circadianos regulados principalmente por luz y horarios regulares. Dormir a horas completamente variables desincroniza estos sistemas biológicos.</p><br/><p><a href='https://doi.org/10.1038/s41591-018-0276-y' target='_blank'>Un estudio de 2019</a> encontró que la irregularidad del sueño se asociaba con peor metabolismo, mayor fatiga, peor estado de ánimo y menor rendimiento cognitivo.</p><br/><p>La hora de despertarse es especialmente importante: fija la señal principal que utiliza el cerebro para sincronizar el reloj biológico.</p><br/><p>Recomendaciones:<ul><li>Mantener la misma hora de despertar incluso fines de semana</li><li>Evitar diferencias mayores a 1 hora</li><li>Exponerse a luz solar poco después de despertar</li><li>Reducir luz intensa por la noche</li></ul></p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Irregularidad del sueño y salud metabólica",
+                "url": "https://doi.org/10.1038/s41591-018-0276-y"
+              }
+            ]
+          },
+          {
             "label": "Suplemento de magnesio para el sueño",
             "short": "El magnesio regula el sistema nervioso y facilita la transición al sueño. La mayoría de las personas tienen déficit. El glicinato es la mejor forma para el sueño; el treonato es la única que atraviesa la barrera hematoencefálica.",
             "long": "<p>El magnesio es cofactor de <b>más de 300 reacciones enzimáticas</b> y tiene un papel directo en la regulación del sistema nervioso autónomo. Activa el sistema <b>GABA</b> (el principal neurotransmisor inhibidor) y regula el eje HPA (hipotálamo-hipófisis-adrenal), reduciendo el cortisol nocturno.</p><br/><p>El déficit de magnesio es muy prevalente: <a href='https://doi.org/10.1016/j.numecd.2012.12.014' target='_blank'>estudios estiman que entre el 45–68% de la población occidental</a> no alcanza la ingesta diaria recomendada, principalmente por el agotamiento de los suelos agrícolas y el procesado de los alimentos.</p><br/><p>Formas y usos:<ul><li><b>Glicinato de magnesio</b>: quelado con glicina, un aminoácido inhibidor que por sí mismo favorece el sueño. Mejor absorción, mínimos efectos laxantes. <b>Ideal para sueño y ansiedad</b></li><li><b>Treonato de magnesio (MgT)</b>: la única forma que <a href='https://doi.org/10.1016/j.neuron.2010.09.005' target='_blank'>atraviesa eficientemente la barrera hematoencefálica</a>. Estudios muestran mejoras en plasticidad sináptica, memoria y función cognitiva. <b>Ideal para cerebro y cognición</b></li><li><b>Óxido de magnesio</b>: la forma más barata y común en suplementos genéricos, pero con absorción muy baja (~4%). Evitar.</li></ul></p><br/><p>Dosis habitual: <b>200–400 mg de magnesio elemental</b> 30–60 minutos antes de dormir.</p>",
@@ -456,6 +484,23 @@
     "color": "#4a8a6f",
     "summary": "Los entornos digitales modernos están diseñados por equipos de científicos del comportamiento para maximizar el tiempo en pantalla. Los mecanismos son los mismos que los de las máquinas tragaperras: intervalos de recompensa variable, bucles de validación social y scroll infinito. Esto no es un problema de fuerza de voluntad, es un problema de diseño. La solución es arquitectónica.",
     "sections": [
+      {
+        "title": "Ansiedad y depresión",
+        "items": [
+          {
+            "label": "Habla sobre lo que te preocupa",
+            "short": "Expresar por escrito o verbalmente los miedos y preocupaciones reduce ansiedad fisiológica y ayuda a procesar emocionalmente experiencias difíciles.",
+            "long": "<p>El cerebro tiende a mantener activas las preocupaciones no expresadas, generando rumiación mental y activación persistente del sistema de estrés.</p><br/><p><a href='https://doi.org/10.1037/0022-006X.63.5.787' target='_blank'>Los estudios de James Pennebaker</a> sobre escritura expresiva muestran que hablar o escribir sobre emociones difíciles mejora bienestar psicológico, reduce síntomas depresivos y disminuye estrés fisiológico.</p><br/><p>La verbalización emocional ayuda a transformar emociones difusas en narrativas estructuradas que el cerebro puede procesar con mayor claridad.</p><br/><p>No hace falta una conversación profunda diaria. A veces basta con:<ul><li>Hablar honestamente con alguien de confianza</li><li>Escribir durante 10–15 minutos antes de dormir</li><li>Nombrar exactamente qué da miedo o preocupa</li></ul></p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Escritura expresiva y salud mental — Pennebaker",
+                "url": "https://doi.org/10.1037/0022-006X.63.5.787"
+              }
+            ]
+          }
+        ]
+      },
       {
         "title": "Hábitos digitales",
         "items": [
@@ -497,6 +542,18 @@
               {
                 "label": "Relaciones sociales y mortalidad prematura — metaanálisis de 148 estudios",
                 "url": "https://doi.org/10.1371/journal.pmed.1000316"
+              }
+            ]
+          },
+          {
+            "label": "Cuida tu aspecto — también es salud mental",
+            "short": "La forma en que nos presentamos ante otros afecta directamente la autoestima, la percepción social y el estado de ánimo. Vestirse bien o sentirse atractivo no es superficial — tiene efectos psicológicos reales.",
+            "long": "<p>Los seres humanos somos animales profundamente sociales. Nuestra apariencia física y la forma en que creemos ser percibidos afectan directamente la autoestima, la confianza y la interacción social.</p><br/><p>La psicología denomina <b>“enclothed cognition”</b> al efecto que tiene la ropa y apariencia sobre el comportamiento y el estado mental. <a href='https://doi.org/10.1037/a0027774' target='_blank'>Estudios experimentales</a> muestran que la ropa modifica atención, autopercepción y rendimiento cognitivo.</p><br/><p>Cuidar la higiene, el pelo, la postura o la ropa puede parecer superficial desde fuera, pero en la práctica cambia la forma en la que interactuamos con el entorno y cómo el entorno responde a nosotros.</p><br/><p>No se trata de perseguir perfección estética ni validación constante, sino de enviarle al cerebro el mensaje de que <b>mereces cuidado y presencia social</b>.</p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Enclothed cognition — efectos psicológicos de la ropa",
+                "url": "https://doi.org/10.1037/a0027774"
               }
             ]
           }
@@ -624,6 +681,73 @@
                 "url": "https://doi.org/10.1001/archinte.163.18.2217"
               }
             ]
+          },
+          {
+            "label": "Estira regularmente",
+            "short": "El estiramiento mejora movilidad, circulación y rigidez muscular. También reduce tensión física acumulada y puede ayudar a disminuir el estrés percibido.",
+            "long": "<p>La vida moderna implica pasar gran parte del día sentado y con rangos de movimiento muy limitados. Esto genera acortamiento muscular, rigidez articular y pérdida progresiva de movilidad.</p><br/><p>Los programas regulares de estiramiento mejoran la <b>flexibilidad, movilidad funcional y rango articular</b>, especialmente cuando se realizan de forma consistente.</p><br/><p><a href='https://doi.org/10.1186/s13102-016-0052-3' target='_blank'>Estudios</a> también muestran reducciones en sensación de estrés, activación simpática y tensión corporal tras sesiones de estiramiento.</p><br/><p>El objetivo no es convertirse en gimnasta, sino mantener tejidos y articulaciones funcionando correctamente durante décadas.</p><br/><p>Especialmente útil:<ul><li>Después de largos periodos sentado</li><li>Antes de dormir</li><li>Tras entrenamiento de fuerza</li><li>Para cuello, cadera, espalda torácica e isquiotibiales</li></ul></p>",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "Stretching y reducción de estrés",
+                "url": "https://doi.org/10.1186/s13102-016-0052-3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Salud física",
+        "items": [
+          {
+            "label": "Dientes: cepillarse es un parche, no la solución",
+            "short": "Los humanos preagricolas tenían tasas de caries inferiores al 2% sin cepillarse. La causa de las caries modernas es la dieta, no la higiene. Elimina el azúcar refinado, reduce el picoteo y usa pasta sin SLS ni triclosán.",
+            "long": "<p>Los análisis de cráneos humanos preagricolas muestran tasas de caries <a href='https://doi.org/10.1038/ng.2536' target='_blank'>inferiores al 2%</a>. Con la introducción de la agricultura (cereales) escalaron al 10–15%. Con el azúcar industrial superaron el 30%. <b>El cepillado no existía — la dieta lo explicaba todo.</b></p><br/><p>El mecanismo: <b>Streptococcus mutans</b> y otras bacterias cariogénicas fermentan los <b>carbohidratos refinados y azúcares</b>, produciendo ácidos que disuelven el esmalte. Sin azúcar, sin fermentación, sin caries. El cepillado elimina parte de la biopelícula bacteriana, pero si la dieta la regenera continuamente, es una batalla perdida.</p><br/><p>Cambios dietéticos con mayor impacto:<ul><li><b>Eliminar azúcar refinado y harina blanca</b> — los sustratos principales de S. mutans</li><li><b>Reducir la frecuencia de ingesta</b> — cada vez que comes, el pH bucal baja durante 20–30 minutos. La saliva necesita ese tiempo para remineralizar. Picotear constantemente mantiene el pH bajo de forma crónica</li><li><b>Alimentos remineralizantes</b>: lácteos (calcio y fósforo), caldo de huesos, verduras de hoja verde. Mantienen la saliva <b>alcalina y saturada de minerales</b></li></ul></p><br/><p>Sobre la pasta de dientes:<ul><li>Evita el <b>SLS (lauril sulfato sódico)</b>: detergente agresivo que daña la mucosa oral y se ha asociado con mayor incidencia de <a href='https://doi.org/10.1111/j.1600-0714.1994.tb01553.x' target='_blank'>úlceras aftosas</a></li><li>Evita el <b>triclosán</b>: antibacteriano disruptor endocrino, ya descrito en la sección de Disruptores</li><li>El <b>flúor tópico</b> sigue siendo efectivo para endurecer el esmalte — el debate es sobre la ingesta sistémica (agua fluorada, suplementos), no el uso tópico puntual</li></ul></p><br/><p>Alternativa ancestral: el <b>miswak</b> (<i>Salvadora persica</i>) — palos de mascar usados en África y Oriente Medio durante milenios. Contienen <b>flúor natural, silica, taninos astringentes y compuestos antibacterianos</b>. <a href='https://doi.org/10.4103/0976-237X.91790' target='_blank'>Estudios comparativos</a> muestran eliminación de placa comparable al cepillo de dientes.</p>",
+            "item": "Pasta de dientes: busca fórmulas sin SLS ni triclosán — o prueba los palos de miswak",
+            "tag": "info",
+            "refs": [
+              {
+                "label": "Caries en poblaciones preagricolas — análisis genómico",
+                "url": "https://doi.org/10.1038/ng.2536"
+              },
+              {
+                "label": "SLS y úlceras aftosas recurrentes",
+                "url": "https://doi.org/10.1111/j.1600-0714.1994.tb01553.x"
+              },
+              {
+                "label": "Miswak vs cepillo de dientes — eliminación de placa",
+                "url": "https://doi.org/10.4103/0976-237X.91790"
+              }
+            ]
+          },
+          {
+            "label": "Alcohol: socialmente útil, biológicamente tóxico",
+            "short": "El alcohol facilita la socialización y reduce inhibiciones, pero incluso dosis moderadas aumentan riesgo de cáncer, alteran el sueño y dañan progresivamente el cerebro y el hígado.",
+            "long": "<p>El alcohol acompaña a la humanidad desde hace miles de años principalmente por su función social: reduce ansiedad social, aumenta sensación de conexión y facilita interacción grupal.</p><br/><p>El etanol aumenta la señalización <b>GABA</b> y dopamina, produciendo relajación y desinhibición temporal. En contextos sociales, esto puede traducirse en mayor sensación de pertenencia y cohesión grupal.</p><br/><p>Sin embargo, desde el punto de vista fisiológico, el alcohol es una sustancia claramente tóxica. <a href='https://www.thelancet.com/article/S0140-6736(18)31571-X/fulltext' target='_blank'>Un gran análisis publicado en The Lancet</a> concluyó que el nivel más seguro de consumo es <b>ninguno</b>.</p><br/><p>Incluso cantidades moderadas:<ul><li>Alteran el sueño REM</li><li>Aumentan riesgo de varios cánceres</li><li>Elevan inflamación</li><li>Reducen testosterona agudamente</li><li>Dañan progresivamente el hígado y cerebro</li></ul></p><br/><p>La pregunta práctica no es si el alcohol es saludable físicamente — no lo es — sino si el beneficio social ocasional compensa el coste biológico para cada persona.</p>",
+            "tag": "problem",
+            "refs": [
+              {
+                "label": "The Lancet — riesgos globales del alcohol",
+                "url": "https://www.thelancet.com/article/S0140-6736(18)31571-X/fulltext"
+              }
+            ]
+          },
+          {
+            "label": "Protege tu audición — evita auriculares cerrados a alto volumen",
+            "short": "El uso prolongado de auriculares intraaurales y volúmenes altos está disparando la pérdida auditiva en jóvenes. Los auriculares abiertos (open-ear) reducen la presión acústica directa sobre el canal auditivo y permiten mantener conciencia del entorno.",
+            "long": "<p>La pérdida auditiva inducida por ruido ya no es un problema exclusivo de trabajadores industriales o personas mayores. La combinación de <b>auriculares intraaurales</b>, sesiones largas y volúmenes elevados está generando daño acumulativo desde edades tempranas.</p><br/><p>La OMS estimó en <a href='https://www.who.int/news-room/questions-and-answers/item/deafness-and-hearing-loss-safe-listening' target='_blank'>más de 1.000 millones de jóvenes</a> en riesgo de pérdida auditiva por prácticas inseguras de escucha.</p><br/><p>El problema principal es la exposición prolongada a niveles superiores a <b>85 dB</b>. A partir de ese punto, las células ciliadas del oído interno comienzan a dañarse progresivamente. Estas células <b>no se regeneran</b>.</p><br/><p>Los auriculares abiertos o de conducción ósea permiten escuchar contenido sin sellar completamente el canal auditivo, reduciendo la necesidad de volumen extremo y manteniendo percepción ambiental. Aun así, el factor más importante sigue siendo <b>el volumen y el tiempo de exposición</b>.</p><br/><p>Recomendaciones:<ul><li>Regla 60/60 — máximo 60% del volumen durante menos de 60 minutos seguidos</li><li>Evitar dormir con auriculares</li><li>Preferir auriculares abiertos en uso prolongado</li><li>Usar protección auditiva en conciertos o clubs</li></ul></p>",
+            "item": "Auriculares abiertos o de conducción ósea para uso diario prolongado",
+            "tag": "solution",
+            "refs": [
+              {
+                "label": "OMS — escucha segura y riesgo de pérdida auditiva",
+                "url": "https://www.who.int/news-room/questions-and-answers/item/deafness-and-hearing-loss-safe-listening"
+              },
+              {
+                "label": "NIOSH — límites de exposición al ruido",
+                "url": "https://www.cdc.gov/niosh/noise/about/noise.html"
+              }
+            ]
           }
         ]
       },
@@ -664,32 +788,6 @@
               {
                 "label": "Earthing y reducción de marcadores inflamatorios",
                 "url": "https://doi.org/10.1155/2012/291541"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Salud dental",
-        "items": [
-          {
-            "label": "Dientes: cepillarse es un parche, no la solución",
-            "short": "Los humanos preagricolas tenían tasas de caries inferiores al 2% sin cepillarse. La causa de las caries modernas es la dieta, no la higiene. Elimina el azúcar refinado, reduce el picoteo y usa pasta sin SLS ni triclosán.",
-            "long": "<p>Los análisis de cráneos humanos preagricolas muestran tasas de caries <a href='https://doi.org/10.1038/ng.2536' target='_blank'>inferiores al 2%</a>. Con la introducción de la agricultura (cereales) escalaron al 10–15%. Con el azúcar industrial superaron el 30%. <b>El cepillado no existía — la dieta lo explicaba todo.</b></p><br/><p>El mecanismo: <b>Streptococcus mutans</b> y otras bacterias cariogénicas fermentan los <b>carbohidratos refinados y azúcares</b>, produciendo ácidos que disuelven el esmalte. Sin azúcar, sin fermentación, sin caries. El cepillado elimina parte de la biopelícula bacteriana, pero si la dieta la regenera continuamente, es una batalla perdida.</p><br/><p>Cambios dietéticos con mayor impacto:<ul><li><b>Eliminar azúcar refinado y harina blanca</b> — los sustratos principales de S. mutans</li><li><b>Reducir la frecuencia de ingesta</b> — cada vez que comes, el pH bucal baja durante 20–30 minutos. La saliva necesita ese tiempo para remineralizar. Picotear constantemente mantiene el pH bajo de forma crónica</li><li><b>Alimentos remineralizantes</b>: lácteos (calcio y fósforo), caldo de huesos, verduras de hoja verde. Mantienen la saliva <b>alcalina y saturada de minerales</b></li></ul></p><br/><p>Sobre la pasta de dientes:<ul><li>Evita el <b>SLS (lauril sulfato sódico)</b>: detergente agresivo que daña la mucosa oral y se ha asociado con mayor incidencia de <a href='https://doi.org/10.1111/j.1600-0714.1994.tb01553.x' target='_blank'>úlceras aftosas</a></li><li>Evita el <b>triclosán</b>: antibacteriano disruptor endocrino, ya descrito en la sección de Disruptores</li><li>El <b>flúor tópico</b> sigue siendo efectivo para endurecer el esmalte — el debate es sobre la ingesta sistémica (agua fluorada, suplementos), no el uso tópico puntual</li></ul></p><br/><p>Alternativa ancestral: el <b>miswak</b> (<i>Salvadora persica</i>) — palos de mascar usados en África y Oriente Medio durante milenios. Contienen <b>flúor natural, silica, taninos astringentes y compuestos antibacterianos</b>. <a href='https://doi.org/10.4103/0976-237X.91790' target='_blank'>Estudios comparativos</a> muestran eliminación de placa comparable al cepillo de dientes.</p>",
-            "item": "Pasta de dientes: busca fórmulas sin SLS ni triclosán — o prueba los palos de miswak",
-            "tag": "info",
-            "refs": [
-              {
-                "label": "Caries en poblaciones preagricolas — análisis genómico",
-                "url": "https://doi.org/10.1038/ng.2536"
-              },
-              {
-                "label": "SLS y úlceras aftosas recurrentes",
-                "url": "https://doi.org/10.1111/j.1600-0714.1994.tb01553.x"
-              },
-              {
-                "label": "Miswak vs cepillo de dientes — eliminación de placa",
-                "url": "https://doi.org/10.4103/0976-237X.91790"
               }
             ]
           }
