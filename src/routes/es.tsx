@@ -795,15 +795,11 @@ const CATEGORIES = categoriesData as Category[]
 function Main() {
 
   const [filtered, setFiltered] = useState(true);
-  console.log(filtered);
   
 
   const filterOut = (keyword:string) => {
-    console.log("keyword", filtered);
-    
-    setFiltered(!filtered)
-    
     return
+    setFiltered(!filtered) 
   }
 
   return (
@@ -911,7 +907,6 @@ function FieldNotes() {
           margin: '0 auto',
         }}
       >
-
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           
