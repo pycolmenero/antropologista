@@ -164,7 +164,7 @@
     "label": "ALIMENTACIÓN",
     "tagline": "Cuida que ingieres. Eres lo que comes.",
     "color": "#6e8a3a",
-    "summary": "Esto no son trucos ni optimizaciones — son requisitos biológicos que la vida moderna sedentaria e interior elimina sistemáticamente. Ningún suplemento reemplaza el movimiento diario, la luz solar y el contacto físico con el entorno."
+    "summary": "Los supermercados están repletos de alimentos con excesivos ingredientes no solo innecesarios sino dañinos o incluso cancerígenos. Procura comer como llevamos haciendo toda la historia, simple, variado y sin ultra procesados."
   },
   "habits": {
     "id": "habits",
@@ -188,9 +188,9 @@
     },
     "icon": "habits",
     "label": "HÁBITOS",
-    "tagline": "La atención es un recurso limitado — protégela",
+    "tagline": "Aprovecha el día. Muevete, toma el sol y sobretodo, rodeate de buena gente",
     "color": "#4a8a6f",
-    "summary": "Los entornos digitales modernos están diseñados por equipos de científicos del comportamiento para maximizar el tiempo en pantalla. Los mecanismos son los mismos que los de las máquinas tragaperras: intervalos de recompensa variable, bucles de validación social y scroll infinito. Esto no es un problema de fuerza de voluntad, es un problema de diseño. La solución es arquitectónica."
+    "summary": "Esto no son trucos ni optimizaciones — son requisitos biológicos que la vida moderna sedentaria e interior elimina sistemáticamente. Ningún suplemento reemplaza el movimiento diario, la luz solar y el contacto físico con el entorno."
   },
 
   "dream": {

@@ -854,9 +854,10 @@ function FieldNotes() {
           padding: 'clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px) 32px',
           maxWidth: 900,
           margin: '0 auto',
+          paddingBottom: '0 !important',
         }}
       >
-        <div
+        {/* <div
           style={{
             fontSize: 10,
             letterSpacing: '0.3em',
@@ -869,7 +870,7 @@ function FieldNotes() {
           className="stagger-in stagger-1"
         >
           {t("subtitle")}
-        </div>
+        </div> */}
 
         <h1
           className="font-display stagger-in stagger-2"
