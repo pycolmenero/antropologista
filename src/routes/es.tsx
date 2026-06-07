@@ -1,8 +1,74 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 
-// TRANSLATION
-import categoriesEs from '../data/categories.es.json'
+// icons
+import dietIcon from '../media/diet.png';
+import habitsIcon from '../media/habits.png';
+import dreamIcon from '../media/dream.png';
+import hygieneIcon from '../media/hygiene.png';
+//data
+import categoriesData from "../data/categories.es.json";
+import itemsDict from "../data/items.es.json";
+
+
+const icons = {
+  "diet": dietIcon,
+  "habits": habitsIcon,
+  "dream": dreamIcon,
+  "hygiene": hygieneIcon
+}
+
+const hazards = [
+    "cáncer",
+    "reducción cognitiva",
+    "reducción de testosterona",
+
+    "actividad estrogénica",
+    "alteración tiroidea",
+    "alteración del microbioma",
+    "alteraciones del desarrollo sexual",
+    "alteraciones hormonales",
+    "alteraciones metabólicas",
+
+    "inflamación",
+    "inmunosupresión",
+    "resistencias antibióticas",
+    "depresión",
+    "Parkinson",
+    "resistencia a la insulina",
+    "caries"
+]
+const prevents = [
+    "osteoporosis",
+    "inflamación crónica",
+    "resistencia a la insulina",
+    "depresión",
+    "reducción de testosterona",
+    "inmunosupresión",
+    "déficit de vitamina D",
+    "caries",
+    "enfermedad periodontal",
+    "inflamación sistémica de origen bucal",
+    "rigidez fascial",
+    "lesiones",
+    "inflamación",
+    "dolor crónico",
+    "movilidad reducida",
+    "atrofia muscular del pie",
+    "desconexión propioceptiva",
+    "reducción cognitiva",
+    "aislamiento social",
+    "ansiedad crónica",
+    "inflamación por cortisol elevado",
+    "ansiedad",
+    "fragmentación del sueño",
+    "rumiación crónica",
+    "cáncer",
+    "mortalidad prematura",
+    "alteraciones hormonales",
+    "depresión estacional",
+    "desregulación circadiana"
+]
 
 
 export const Route = createFileRoute('/es')({
@@ -209,20 +275,20 @@ type Item = {
 }
 
 type Section = {
-  title: string
-  items: Item[]
-  ancient?: string
+  key: string
+  icon: string
+  description: string
 }
 
 type Category = {
   id: string
+  items: string
   icon: string
   label: string
   tagline: string
   color: string
   summary: string
   table: CategoryTable[]
-  sections: Section[]
 }
 
 // ─── Icons ───────────────────────────────────────────────────────────────────
@@ -252,11 +318,19 @@ function ChevronIcon({ open }: { open: boolean }) {
 }
 
 // ─── Item Row ─────────────────────────────────────────────────────────────────
-function ItemRow({ item }: { item: Item }) {
+function ItemRow({ label }: { label: String }) {
   const [expanded, setExpanded] = useState(false)
   const [refsOpen, setRefsOpen] = useState(false)
 
+  const item:Item = itemsDict[label];
+  
+  
+  if(!item) return
+
+
   const hasRichContent = item.short || item.long
+
+  
 
   return (
     <div className="item-row px-4 py-4">
@@ -294,18 +368,7 @@ function ItemRow({ item }: { item: Item }) {
 
             {/* Short */}
             {item.short && (
-              <p
-                style={{
-                  fontSize: 12,
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.7,
-                  fontFamily: 'Space Mono',
-                  margin: 0,
-                  marginBottom: item.long ? 8 : 0,
-                }}
-              >
-                {/* {item.short} */}
-                <div
+              <div
                     dangerouslySetInnerHTML={{ __html: item.short }}
                     style={{
                       fontSize: 12,
@@ -315,7 +378,6 @@ function ItemRow({ item }: { item: Item }) {
                     }}
                     className="rich-content"
                   />
-              </p>
             )}
 
             {/* Read more toggle */}
@@ -503,6 +565,13 @@ function SectionBlock({
   color: string
   onToggle: () => void
 }) {
+
+
+  const sectionLabel = section[0];
+  const itemNames = section[1];
+
+  if(sectionLabel[0]==='_') return;
+
   return (
     <div
       style={{
@@ -531,7 +600,7 @@ function SectionBlock({
             transition: 'color 0.2s ease',
           }}
         >
-          {section.title}
+          {sectionLabel}
         </span>
         <ChevronIcon open={open} />
       </div>
@@ -540,12 +609,12 @@ function SectionBlock({
       <div className={`expanded-panel ${open ? 'open' : ''}`}>
         <div className="expanded-inner">
           <div>
-            {(()=>{console.log(section.items); return ""})()}
-            {section.items.map((item, ii) => (
-              <ItemRow key={ii} item={item} />
+
+            {itemNames.map((label, ii) => (
+              <ItemRow key={ii} label={label} />
             ))}
 
-            {section.ancient && (
+            {/* {section.ancient && (
               <div className="px-4 pb-4">
                 <div className="callout">
                   <div
@@ -575,18 +644,31 @@ function SectionBlock({
                   </p>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
+
     </div>
   )
 }
+
 
 // ─── Category Card ────────────────────────────────────────────────────────────
 function CategoryCard({ category, index }: { category: Category; index: number }) {
   const [open, setOpen] = useState(false)
   const [openSection, setOpenSection] = useState<number | null>(null)
+
+
+  const isMultiLevel =
+     ["hygiene", "habits", "diet"].includes(category.id);
+
+    
+  const items = category.items;
+
+  
+  if(!items) return;
+  
 
   return (
     <div
@@ -606,7 +688,7 @@ function CategoryCard({ category, index }: { category: Category; index: number }
           }}
         >
           <span className="font-display" style={{ fontSize: 22 }}>
-            {category.icon}
+            <img src={icons[category.icon]} alt="" />
           </span>
         </div>
 
@@ -665,16 +747,38 @@ function CategoryCard({ category, index }: { category: Category; index: number }
 
             {/* Sections */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-              {category.sections.map((section, si) => (
-                <SectionBlock
-                  key={si}
-                  section={section}
-                  index={si}
-                  open={openSection === si}
-                  color={category.color}
-                  onToggle={() => setOpenSection(openSection === si ? null : si)}
-                />
-              ))}
+
+              {
+                isMultiLevel ? (
+                  
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+
+
+                  {Object.entries(items).map((section, si) => (
+                    <SectionBlock
+                      key={si}
+                      section={section}
+                      index={si}
+                      open={openSection === si}
+                      color={category.color}
+                      onToggle={() => setOpenSection(openSection === si ? null : si)}
+                    />
+                  ))}
+
+
+                </div>
+                  
+                ) : (
+
+                  items.map((label, si) => (
+                    <ItemRow key={si} label={label} />
+                  ))
+                  
+
+                )
+              }
+
+          
             </div>
 
           </div>
@@ -684,59 +788,68 @@ function CategoryCard({ category, index }: { category: Category; index: number }
   )
 }
 
-// ─── Root ─────────────────────────────────────────────────────────────────────
-// export default function App() {
 
-//   const location = useLocation()
-
-//   const lang = location.pathname.startsWith('/es')
-//     ? 'es'
-//     : 'en'
-
-//   const categoriesData =
-//     lang === 'es'
-//       ? categoriesEs
-//       : categoriesEn
-
-//   const categories = categoriesData as Category[];
+const CATEGORIES = categoriesData as Category[]
 
 
-//   return (
-//     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-//       {categories.map((cat, i) => (
-//         <CategoryCard key={cat.id} category={cat} index={i} />
-//       ))}
-//     </div>
-//   )
-// }
+function Main() {
 
+  const [filtered, setFiltered] = useState(true);
+  console.log(filtered);
+  
 
-// function ChevronIcon({ open }: { open: boolean }) {
-//   return (
-//     <svg
-//       width="14"
-//       height="14"
-//       viewBox="0 0 14 14"
-//       fill="none"
-//       xmlns="http://www.w3.org/2000/svg"
-//       className={`chevron ${open ? 'rotated' : ''}`}
-//       style={{ color: 'var(--text-muted)' }}
-//     >
-//       <path
-//         d="M2 5L7 10L12 5"
-//         stroke="currentColor"
-//         strokeWidth="1.5"
-//         strokeLinecap="round"
-//         strokeLinejoin="round"
-//       />
-//     </svg>
-//   )
-// }
+  const filterOut = (keyword:string) => {
+    console.log("keyword", filtered);
+    
+    setFiltered(!filtered)
+    
+    return
+  }
+
+  return (
+    <div className="">
+
+      {
+        filtered && (
+          <div className="">
+            <h3>¿Qué compras?</h3>
+
+        <div className="hazards">
+          <div className="">
+            {
+              hazards.map((h) => {
+                return <span onClick={()=>{filterOut(h)}}>{h}</span>
+              })
+            }
+          </div>
+        </div>
+
+            <CategoryCard category={CATEGORIES["hygiene"]} index={0} />
+            <CategoryCard category={CATEGORIES["diet"]} index={1} />
+
+            <h3>¿Qué haces?</h3>
+
+        <div className="hazards">
+          <div className="">
+            {
+              prevents.map((h) => {
+                return <span onClick={()=>{filterOut(h)}}>{h}</span>
+              })
+            }
+          </div>
+        </div>
+
+            <CategoryCard category={CATEGORIES["habits"]} index={2} />
+            <CategoryCard category={CATEGORIES["dream"]} index={3} />
+          </div>
+        )
+      }
+
+    </div>
+  )
+}
 
 function FieldNotes() {
-
-  const categories = categoriesEs as Category[];
-
   return (
     <div className="grain" style={{ minHeight: '100vh' }}>
       {/* Header */}
@@ -788,47 +901,6 @@ function FieldNotes() {
 
         <hr className="header-rule stagger-in stagger-2" style={{ marginBottom: 20, maxWidth: 120 }} />
 
-        <p
-          className="stagger-in stagger-3"
-          style={{
-            fontSize: 'clamp(12px, 1.6vw, 14px)',
-            color: 'var(--text-muted)',
-            fontFamily: 'Space Mono',
-            lineHeight: 1.8,
-            maxWidth: 540,
-            margin: '0 0 8px',
-          }}
-        >
-          {t("desc")}
-        </p>
-
-        {/* <div
-          className="stagger-in stagger-3 flex items-center gap-6 flex-wrap"
-          style={{ marginTop: 24 }}
-        >
-          {(['problem', 'alternative', 'context'] as const).map((t) => (
-            <div key={t} className="flex items-center gap-2">
-              <span
-                className={`tag ${t === 'problem' ? 'tag-problem' : t === 'alternative' ? 'tag-solution' : 'tag-info'}`}
-              >
-                {t}
-              </span>
-              <span
-                style={{
-                  fontSize: 10,
-                  color: 'var(--text-muted)',
-                  fontFamily: 'Space Mono',
-                }}
-              >
-                {t === 'problem'
-                  ? 'harmful item'
-                  : t === 'alternative'
-                    ? 'better option'
-                    : 'ancestral info'}
-              </span>
-            </div>
-          ))}
-        </div> */}
       </header>
 
       {/* Main content */}
@@ -839,10 +911,13 @@ function FieldNotes() {
           margin: '0 auto',
         }}
       >
+
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          {categories.map((cat, i) => (
-            <CategoryCard key={cat.id} category={cat} index={i} />
-          ))}
+          
+
+        <Main/>
+
         </div>
 
         {/* Footer */}
@@ -878,7 +953,7 @@ function FieldNotes() {
                 Consult a qualified practitioner before making health decisions.
               </p>
             </div>
-            <div
+            {/* <div
               style={{
                 fontSize: 10,
                 color: 'var(--text-muted)',
@@ -890,7 +965,7 @@ function FieldNotes() {
               ANTHROPOLOGY NOTES
               <br />
               <span style={{ opacity: 0.5 }}>prototype v0.1</span>
-            </div>
+            </div> */}
           </div>
         </footer>
       </main>
